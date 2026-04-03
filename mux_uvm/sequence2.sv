@@ -1,0 +1,27 @@
+class mux_all_ones_seq extends uvm_sequence #(mux_transaction);
+  mux_transaction tr;
+  
+    `uvm_object_utils(mux_all_ones_seq)
+  
+    function new(string name = "mux_all_ones_seq");
+      super.new(name);
+    endfunction
+    
+    task body();
+        `uvm_info("SEQ", "Starting All-Ones Stimulus...", UVM_LOW)
+      
+          
+          
+            for(int i = 0; i < 4; i++) begin
+              tr = mux_transaction::type_id::create("tr");
+              start_item(tr);
+              tr.d[i]  = 32'hFFFF_FFFF;
+              tr.sel = i; 
+               #10;
+              finish_item(tr);
+            end
+            
+            
+        
+    endtask
+endclass
