@@ -1,0 +1,347 @@
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++       REPORT INFO       ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+SUMMARY
+===============================================
+|     Property     |          Value           |
+===============================================
+| User             | runner                   |
+| Host             | 6f8621e8c34f             |
+| Tool             | Riviera-PRO 2025.04      |
+| Report file      | /home/runner/cov.txt     |
+| Report date      | 2026-04-03 07:29         |
+| Report arguments | -verbose                 |
+| Input file       | /home/runner/fcover.acdb |
+| Input file date  | 2026-04-03 07:29         |
+| Number of tests  | 1                        |
+===============================================
+
+
+TEST DETAILS
+==============================================
+| Property |              Value              |
+==============================================
+| Test     | fcover.acdb:fcover              |
+| Status   | Error                           |
+| Args     | asim +access+r                  |
+| Simtime  | 6005 ns                         |
+| Cputime  | 5.188 s                         |
+| Seed     | 1                               |
+| Date     | 2026-04-03 07:29                |
+| User     | runner                          |
+| Host     | 6f8621e8c34f                    |
+| Host os  | Linux64                         |
+| Tool     | Riviera-PRO 2025.04 (simulator) |
+==============================================
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++     DESIGN HIERARCHY    ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CUMULATIVE SUMMARY
+=============================================
+|    Coverage Type    | Weight | Hits/Total |
+=============================================
+| Covergroup Coverage |      1 |   100.000% |
+|---------------------|--------|------------|
+| Types               |        |      1 / 1 |
+=============================================
+CUMULATIVE INSTANCE-BASED COVERAGE: 100.000%
+COVERED INSTANCES: 1 / 1
+FILES: 1
+
+
+CLASS - /\package mux_pkg\/demux_coverage : work.mux_pkg/\mux_pkg demux_coverage \
+
+
+    SUMMARY
+    =============================================
+    |    Coverage Type    | Weight | Hits/Total |
+    =============================================
+    | Covergroup Coverage |      1 |   100.000% |
+    |---------------------|--------|------------|
+    | Types               |        |      1 / 1 |
+    =============================================
+    WEIGHTED AVERAGE LOCAL: 100.000%
+
+
+    COVERGROUP COVERAGE
+    ===================================================================================
+    |                   Covergroup                    |   Hits   |  Goal /  | Status  |
+    |                                                 |          | At Least |         |
+    ===================================================================================
+    | TYPE /\package mux_pkg\/demux_coverage/demux_cg | 100.000% | 100.000% | Covered |
+    ===================================================================================
+    | INSTANCE <UNNAMED1>                             | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_sel                   | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin all_inputs[0]                               |       73 |        1 | Covered |
+    | bin all_inputs[1]                               |       74 |        1 | Covered |
+    | bin all_inputs[2]                               |       73 |        1 | Covered |
+    | bin all_inputs[3]                               |       75 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_sel_states            | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin valid[0]                                    |       73 |        1 | Covered |
+    | bin valid[1]                                    |       74 |        1 | Covered |
+    | bin valid[2]                                    |       73 |        1 | Covered |
+    | bin valid[3]                                    |       75 |        1 | Covered |
+    | bin unknown                                     |        5 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_d                     | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin zero                                        |       10 |        1 | Covered |
+    | bin max                                         |       10 |        1 | Covered |
+    | bin walking_1                                   |      199 |        1 | Covered |
+    | bin others                                      |      279 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_y                     | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin y_zero                                      |       10 |        1 | Covered |
+    | bin y_max                                       |       10 |        1 | Covered |
+    | bin y_walking_1                                 |      199 |        1 | Covered |
+    | bin y_others                                    |      274 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_sel_transitions       | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin transitions_0[0]                            |       13 |        1 | Covered |
+    | bin transitions_0[1]                            |       23 |        1 | Covered |
+    | bin transitions_0[2]                            |       24 |        1 | Covered |
+    | bin transitions_0[3]                            |       13 |        1 | Covered |
+    | bin transitions_1[0]                            |       13 |        1 | Covered |
+    | bin transitions_1[1]                            |       14 |        1 | Covered |
+    | bin transitions_1[2]                            |       23 |        1 | Covered |
+    | bin transitions_1[3]                            |       24 |        1 | Covered |
+    | bin transitions_2[0]                            |       22 |        1 | Covered |
+    | bin transitions_2[1]                            |       14 |        1 | Covered |
+    | bin transitions_2[2]                            |       13 |        1 | Covered |
+    | bin transitions_2[3]                            |       23 |        1 | Covered |
+    | bin transitions_3[0]                            |       24 |        1 | Covered |
+    | bin transitions_3[1]                            |       22 |        1 | Covered |
+    | bin transitions_3[2]                            |       13 |        1 | Covered |
+    | bin transitions_3[3]                            |       15 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_y_toggles             | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin all_zeros                                   |       10 |        1 | Covered |
+    | bin all_ones                                    |       10 |        1 | Covered |
+    | bin alternating_1                               |       25 |        1 | Covered |
+    | bin alternating_2                               |       25 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | CROSS <UNNAMED1>::cross_sel_d                   | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin <all_inputs[0],zero>                        |        2 |        1 | Covered |
+    | bin <all_inputs[0],max>                         |        2 |        1 | Covered |
+    | bin <all_inputs[0],walking_1>                   |       50 |        1 | Covered |
+    | bin <all_inputs[0],others>                      |       68 |        1 | Covered |
+    | bin <all_inputs[1],zero>                        |        2 |        1 | Covered |
+    | bin <all_inputs[1],max>                         |        4 |        1 | Covered |
+    | bin <all_inputs[1],walking_1>                   |       49 |        1 | Covered |
+    | bin <all_inputs[1],others>                      |       68 |        1 | Covered |
+    | bin <all_inputs[2],zero>                        |        2 |        1 | Covered |
+    | bin <all_inputs[2],max>                         |        2 |        1 | Covered |
+    | bin <all_inputs[2],walking_1>                   |       49 |        1 | Covered |
+    | bin <all_inputs[2],others>                      |       69 |        1 | Covered |
+    | bin <all_inputs[3],zero>                        |        4 |        1 | Covered |
+    | bin <all_inputs[3],max>                         |        2 |        1 | Covered |
+    | bin <all_inputs[3],walking_1>                   |       51 |        1 | Covered |
+    | bin <all_inputs[3],others>                      |       69 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | CROSS <UNNAMED1>::cross_sel_y                   | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin <all_inputs[0],y_zero>                      |        2 |        1 | Covered |
+    | bin <all_inputs[0],y_max>                       |        2 |        1 | Covered |
+    | bin <all_inputs[0],y_walking_1>                 |       50 |        1 | Covered |
+    | bin <all_inputs[0],y_others>                    |       68 |        1 | Covered |
+    | bin <all_inputs[1],y_zero>                      |        2 |        1 | Covered |
+    | bin <all_inputs[1],y_max>                       |        4 |        1 | Covered |
+    | bin <all_inputs[1],y_walking_1>                 |       49 |        1 | Covered |
+    | bin <all_inputs[1],y_others>                    |       68 |        1 | Covered |
+    | bin <all_inputs[2],y_zero>                      |        2 |        1 | Covered |
+    | bin <all_inputs[2],y_max>                       |        2 |        1 | Covered |
+    | bin <all_inputs[2],y_walking_1>                 |       49 |        1 | Covered |
+    | bin <all_inputs[2],y_others>                    |       69 |        1 | Covered |
+    | bin <all_inputs[3],y_zero>                      |        4 |        1 | Covered |
+    | bin <all_inputs[3],y_max>                       |        2 |        1 | Covered |
+    | bin <all_inputs[3],y_walking_1>                 |       51 |        1 | Covered |
+    | bin <all_inputs[3],y_others>                    |       69 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | CROSS <UNNAMED1>::cross_sel_toggle              | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin <all_inputs[0],all_zeros>                   |        2 |        1 | Covered |
+    | bin <all_inputs[0],all_ones>                    |        2 |        1 | Covered |
+    | bin <all_inputs[0],alternating_1>               |        6 |        1 | Covered |
+    | bin <all_inputs[0],alternating_2>               |        6 |        1 | Covered |
+    | bin <all_inputs[1],all_zeros>                   |        2 |        1 | Covered |
+    | bin <all_inputs[1],all_ones>                    |        4 |        1 | Covered |
+    | bin <all_inputs[1],alternating_1>               |        7 |        1 | Covered |
+    | bin <all_inputs[1],alternating_2>               |        6 |        1 | Covered |
+    | bin <all_inputs[2],all_zeros>                   |        2 |        1 | Covered |
+    | bin <all_inputs[2],all_ones>                    |        2 |        1 | Covered |
+    | bin <all_inputs[2],alternating_1>               |        6 |        1 | Covered |
+    | bin <all_inputs[2],alternating_2>               |        7 |        1 | Covered |
+    | bin <all_inputs[3],all_zeros>                   |        4 |        1 | Covered |
+    | bin <all_inputs[3],all_ones>                    |        2 |        1 | Covered |
+    | bin <all_inputs[3],alternating_1>               |        6 |        1 | Covered |
+    | bin <all_inputs[3],alternating_2>               |        6 |        1 | Covered |
+    ===================================================================================
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++       DESIGN UNITS      ++++++++++
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CUMULATIVE SUMMARY
+=============================================
+|    Coverage Type    | Weight | Hits/Total |
+=============================================
+| Covergroup Coverage |      1 |   100.000% |
+|---------------------|--------|------------|
+| Types               |        |      1 / 1 |
+=============================================
+CUMULATIVE DESIGN-BASED COVERAGE: 100.000%
+COVERED DESIGN UNITS: 1 / 1
+FILES: 1
+
+
+CLASS - work.mux_pkg/\mux_pkg demux_coverage \
+
+
+    SUMMARY
+    =============================================
+    |    Coverage Type    | Weight | Hits/Total |
+    =============================================
+    | Covergroup Coverage |      1 |   100.000% |
+    |---------------------|--------|------------|
+    | Types               |        |      1 / 1 |
+    =============================================
+    WEIGHTED AVERAGE: 100.000%
+
+
+    COVERGROUP COVERAGE
+    ===================================================================================
+    |                   Covergroup                    |   Hits   |  Goal /  | Status  |
+    |                                                 |          | At Least |         |
+    ===================================================================================
+    | TYPE /\package mux_pkg\/demux_coverage/demux_cg | 100.000% | 100.000% | Covered |
+    ===================================================================================
+    | INSTANCE <UNNAMED1>                             | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_sel                   | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin all_inputs[0]                               |       73 |        1 | Covered |
+    | bin all_inputs[1]                               |       74 |        1 | Covered |
+    | bin all_inputs[2]                               |       73 |        1 | Covered |
+    | bin all_inputs[3]                               |       75 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_sel_states            | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin valid[0]                                    |       73 |        1 | Covered |
+    | bin valid[1]                                    |       74 |        1 | Covered |
+    | bin valid[2]                                    |       73 |        1 | Covered |
+    | bin valid[3]                                    |       75 |        1 | Covered |
+    | bin unknown                                     |        5 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_d                     | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin zero                                        |       10 |        1 | Covered |
+    | bin max                                         |       10 |        1 | Covered |
+    | bin walking_1                                   |      199 |        1 | Covered |
+    | bin others                                      |      279 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_y                     | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin y_zero                                      |       10 |        1 | Covered |
+    | bin y_max                                       |       10 |        1 | Covered |
+    | bin y_walking_1                                 |      199 |        1 | Covered |
+    | bin y_others                                    |      274 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_sel_transitions       | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin transitions_0[0]                            |       13 |        1 | Covered |
+    | bin transitions_0[1]                            |       23 |        1 | Covered |
+    | bin transitions_0[2]                            |       24 |        1 | Covered |
+    | bin transitions_0[3]                            |       13 |        1 | Covered |
+    | bin transitions_1[0]                            |       13 |        1 | Covered |
+    | bin transitions_1[1]                            |       14 |        1 | Covered |
+    | bin transitions_1[2]                            |       23 |        1 | Covered |
+    | bin transitions_1[3]                            |       24 |        1 | Covered |
+    | bin transitions_2[0]                            |       22 |        1 | Covered |
+    | bin transitions_2[1]                            |       14 |        1 | Covered |
+    | bin transitions_2[2]                            |       13 |        1 | Covered |
+    | bin transitions_2[3]                            |       23 |        1 | Covered |
+    | bin transitions_3[0]                            |       24 |        1 | Covered |
+    | bin transitions_3[1]                            |       22 |        1 | Covered |
+    | bin transitions_3[2]                            |       13 |        1 | Covered |
+    | bin transitions_3[3]                            |       15 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | COVERPOINT <UNNAMED1>::cp_y_toggles             | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin all_zeros                                   |       10 |        1 | Covered |
+    | bin all_ones                                    |       10 |        1 | Covered |
+    | bin alternating_1                               |       25 |        1 | Covered |
+    | bin alternating_2                               |       25 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | CROSS <UNNAMED1>::cross_sel_d                   | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin <all_inputs[0],zero>                        |        2 |        1 | Covered |
+    | bin <all_inputs[0],max>                         |        2 |        1 | Covered |
+    | bin <all_inputs[0],walking_1>                   |       50 |        1 | Covered |
+    | bin <all_inputs[0],others>                      |       68 |        1 | Covered |
+    | bin <all_inputs[1],zero>                        |        2 |        1 | Covered |
+    | bin <all_inputs[1],max>                         |        4 |        1 | Covered |
+    | bin <all_inputs[1],walking_1>                   |       49 |        1 | Covered |
+    | bin <all_inputs[1],others>                      |       68 |        1 | Covered |
+    | bin <all_inputs[2],zero>                        |        2 |        1 | Covered |
+    | bin <all_inputs[2],max>                         |        2 |        1 | Covered |
+    | bin <all_inputs[2],walking_1>                   |       49 |        1 | Covered |
+    | bin <all_inputs[2],others>                      |       69 |        1 | Covered |
+    | bin <all_inputs[3],zero>                        |        4 |        1 | Covered |
+    | bin <all_inputs[3],max>                         |        2 |        1 | Covered |
+    | bin <all_inputs[3],walking_1>                   |       51 |        1 | Covered |
+    | bin <all_inputs[3],others>                      |       69 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | CROSS <UNNAMED1>::cross_sel_y                   | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin <all_inputs[0],y_zero>                      |        2 |        1 | Covered |
+    | bin <all_inputs[0],y_max>                       |        2 |        1 | Covered |
+    | bin <all_inputs[0],y_walking_1>                 |       50 |        1 | Covered |
+    | bin <all_inputs[0],y_others>                    |       68 |        1 | Covered |
+    | bin <all_inputs[1],y_zero>                      |        2 |        1 | Covered |
+    | bin <all_inputs[1],y_max>                       |        4 |        1 | Covered |
+    | bin <all_inputs[1],y_walking_1>                 |       49 |        1 | Covered |
+    | bin <all_inputs[1],y_others>                    |       68 |        1 | Covered |
+    | bin <all_inputs[2],y_zero>                      |        2 |        1 | Covered |
+    | bin <all_inputs[2],y_max>                       |        2 |        1 | Covered |
+    | bin <all_inputs[2],y_walking_1>                 |       49 |        1 | Covered |
+    | bin <all_inputs[2],y_others>                    |       69 |        1 | Covered |
+    | bin <all_inputs[3],y_zero>                      |        4 |        1 | Covered |
+    | bin <all_inputs[3],y_max>                       |        2 |        1 | Covered |
+    | bin <all_inputs[3],y_walking_1>                 |       51 |        1 | Covered |
+    | bin <all_inputs[3],y_others>                    |       69 |        1 | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | CROSS <UNNAMED1>::cross_sel_toggle              | 100.000% | 100.000% | Covered |
+    |-------------------------------------------------|----------|----------|---------|
+    | bin <all_inputs[0],all_zeros>                   |        2 |        1 | Covered |
+    | bin <all_inputs[0],all_ones>                    |        2 |        1 | Covered |
+    | bin <all_inputs[0],alternating_1>               |        6 |        1 | Covered |
+    | bin <all_inputs[0],alternating_2>               |        6 |        1 | Covered |
+    | bin <all_inputs[1],all_zeros>                   |        2 |        1 | Covered |
+    | bin <all_inputs[1],all_ones>                    |        4 |        1 | Covered |
+    | bin <all_inputs[1],alternating_1>               |        7 |        1 | Covered |
+    | bin <all_inputs[1],alternating_2>               |        6 |        1 | Covered |
+    | bin <all_inputs[2],all_zeros>                   |        2 |        1 | Covered |
+    | bin <all_inputs[2],all_ones>                    |        2 |        1 | Covered |
+    | bin <all_inputs[2],alternating_1>               |        6 |        1 | Covered |
+    | bin <all_inputs[2],alternating_2>               |        7 |        1 | Covered |
+    | bin <all_inputs[3],all_zeros>                   |        4 |        1 | Covered |
+    | bin <all_inputs[3],all_ones>                    |        2 |        1 | Covered |
+    | bin <all_inputs[3],alternating_1>               |        6 |        1 | Covered |
+    | bin <all_inputs[3],alternating_2>               |        6 |        1 | Covered |
+    ===================================================================================

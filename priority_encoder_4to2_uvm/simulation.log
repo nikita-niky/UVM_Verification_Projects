@@ -1,0 +1,855 @@
+vsim +access+r;
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.8 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 4 (30.77%) other processes in SLP
+# SLP: 18 (0.06%) signals in SLP and 9 (0.03%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 30693 kB (elbread=2134 elab2=23662 kernel=4895 sdf=0)
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+run -all;
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test p_enc_test...
+# KERNEL: UVM_INFO /home/runner/test.sv(20) @ 0: uvm_test_top [p_enc_test] Starting test...
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(20) @ 0: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 1...
+# KERNEL: UVM_INFO /home/runner/sequence1.sv(13) @ 0: uvm_test_top.env.agent.sqr@@s1 [p_enc_base_sequence] Starting sequence body
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 11: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 11: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 21: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 21: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 31: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 31: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/sequence1.sv(24) @ 40: uvm_test_top.env.agent.sqr@@s1 [p_enc_base_sequence] Sequence body finished
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(23) @ 40: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 2...
+# KERNEL: UVM_INFO /home/runner/sequence2.sv(11) @ 40: uvm_test_top.env.agent.sqr@@s2 [p_enc_conflict_seq] Starting all Ones Stimulus for all ports...
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 41: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 41: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @41 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(26) @ 50: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 3...
+# KERNEL: UVM_INFO /home/runner/sequence3.sv(11) @ 50: uvm_test_top.env.agent.sqr@@s3 [p_enc_all_zeros_seq] Starting ALL ZEROS Stimulus for all ports...
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 51: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 51: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(29) @ 60: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 4...
+# KERNEL: UVM_INFO /home/runner/sequence4.sv(11) @ 60: uvm_test_top.env.agent.sqr@@s4 [p_enc_random_seq] Starting random value Stimulus for all ports...
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 71: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 71: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 81: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 81: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 91: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 91: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @91 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 101: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 101: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 111: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 111: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 121: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 121: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 131: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 131: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 141: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 141: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 151: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 151: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 161: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 161: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @161 Priority is given to 3 (Req=1011, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 171: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 171: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @171 Priority is given to 3 (Req=1010, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 181: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 181: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 191: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 191: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @191 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 201: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 201: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 211: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 211: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 231: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 231: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 241: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 241: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @241 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 251: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 251: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 261: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 261: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @261 Priority is given to 3 (Req=1010, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 271: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 271: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @271 Priority is given to 3 (Req=1011, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 281: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 281: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 291: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 291: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 301: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 301: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 311: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 311: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 321: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 321: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 331: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 331: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 341: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 341: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @341 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 351: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 351: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 361: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 361: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 371: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 371: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 391: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 391: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 401: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 401: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 411: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 411: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @411 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 421: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 421: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 431: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 431: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 441: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 441: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 451: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 451: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 461: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 461: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 471: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 471: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 481: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 481: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @481 Priority is given to 3 (Req=1011, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 491: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 491: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @491 Priority is given to 3 (Req=1010, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 501: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 501: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 511: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 511: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @511 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 521: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 521: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 531: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 531: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 551: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 551: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 561: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 561: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @561 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 571: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 571: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 581: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 581: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @581 Priority is given to 3 (Req=1010, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 591: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 591: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @591 Priority is given to 3 (Req=1011, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 601: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 601: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 611: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 611: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 621: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 621: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 631: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 631: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 641: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 641: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 651: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 651: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 661: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 661: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @661 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 671: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 671: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 681: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 681: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 691: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 691: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 711: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 711: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 721: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 721: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 731: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 731: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @731 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 741: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 741: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 751: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 751: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 761: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 761: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 771: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 771: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 781: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 781: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 791: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 791: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 801: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 801: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @801 Priority is given to 3 (Req=1011, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 811: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 811: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @811 Priority is given to 3 (Req=1010, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 821: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 821: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 831: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 831: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @831 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 841: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 841: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 851: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 851: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 871: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 871: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 881: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 881: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @881 Priority is given to 3 (Req=1111, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 891: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 891: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 901: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 901: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @901 Priority is given to 3 (Req=1010, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 911: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 911: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @911 Priority is given to 3 (Req=1011, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 921: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 921: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 931: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 931: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 941: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 941: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 951: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 951: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 961: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 961: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 971: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 971: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 981: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 981: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @981 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 991: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 991: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1001: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1001: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1011: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1011: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1031: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1031: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1041: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1041: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1051: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1051: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# KERNEL: Info: assertion.sv (47): @1051 Priority is given to 3 (Req=1110, Code=11)
+# KERNEL: UVM_INFO /home/runner/test.sv(26) @ 1110: uvm_test_top [p_enc_test] Test finished!
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 1110: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(44) @ 1110: uvm_test_top.env.scb [SCB_SUMMARY] Verification Complete: 99 Passed, 0 Failed
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 1110: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :  213
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [MASTER_SEQ]     4
+# KERNEL: [RNTST]     1
+# KERNEL: [SCB_PASS]    99
+# KERNEL: [SCB_SUMMARY]     1
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [p_enc_all_zeros_seq]     1
+# KERNEL: [p_enc_base_sequence]     2
+# KERNEL: [p_enc_conflict_seq]     1
+# KERNEL: [p_enc_random_seq]     1
+# KERNEL: [p_enc_scoreboard]    99
+# KERNEL: [p_enc_test]     2
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 1110 ns,  Iteration: 56,  Instance: /tb_top,  Process: @INITIAL#16_0@.
+# KERNEL: stopped at time: 1110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acdb save;
+acdb report -db fcover.acdb -txt -o cov.txt -verbose;
+# ACDB: Coverage report "cov.txt" was generated successfully.
+exec cat cov.txt;
+# +++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++       REPORT INFO       ++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# SUMMARY
+# ===============================================
+# |     Property     |          Value           |
+# ===============================================
+# | User             | runner                   |
+# | Host             | 6e1eb1e8a0fb             |
+# | Tool             | Riviera-PRO 2025.04      |
+# | Report file      | /home/runner/cov.txt     |
+# | Report date      | 2026-04-03 07:35         |
+# | Report arguments | -verbose                 |
+# | Input file       | /home/runner/fcover.acdb |
+# | Input file date  | 2026-04-03 07:35         |
+# | Number of tests  | 1                        |
+# ===============================================
+# 
+# 
+# TEST DETAILS
+# ==============================================
+# | Property |              Value              |
+# ==============================================
+# | Test     | fcover.acdb:fcover              |
+# | Status   | Ok                              |
+# | Args     | asim +access+r                  |
+# | Simtime  | 1110 ns                         |
+# | Cputime  | 1.202 s                         |
+# | Seed     | 1                               |
+# | Date     | 2026-04-03 07:35                |
+# | User     | runner                          |
+# | Host     | 6e1eb1e8a0fb                    |
+# | Host os  | Linux64                         |
+# | Tool     | Riviera-PRO 2025.04 (simulator) |
+# ==============================================
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++     DESIGN HIERARCHY    ++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# CUMULATIVE SUMMARY
+# =============================================
+# |    Coverage Type    | Weight | Hits/Total |
+# =============================================
+# | Covergroup Coverage |      1 |   100.000% |
+# |---------------------|--------|------------|
+# | Types               |        |      1 / 1 |
+# =============================================
+# CUMULATIVE INSTANCE-BASED COVERAGE: 100.000%
+# COVERED INSTANCES: 1 / 1
+# FILES: 1
+# 
+# 
+# CLASS - /\package p_enc_pkg\/p_enc_coverage : work.p_enc_pkg/\p_enc_pkg p_enc_coverage \
+# 
+# 
+#     SUMMARY
+#     =============================================
+#     |    Coverage Type    | Weight | Hits/Total |
+#     =============================================
+#     | Covergroup Coverage |      1 |   100.000% |
+#     |---------------------|--------|------------|
+#     | Types               |        |      1 / 1 |
+#     =============================================
+#     WEIGHTED AVERAGE LOCAL: 100.000%
+# 
+# 
+#     COVERGROUP COVERAGE
+#     ======================================================================================
+#     |                    Covergroup                     |   Hits   |  Goal /  |  Status  |
+#     |                                                   |          | At Least |          |
+#     ======================================================================================
+#     | TYPE /\package p_enc_pkg\/p_enc_coverage/p_enc_cg | 100.000% | 100.000% | Covered  |
+#     ======================================================================================
+#     | INSTANCE <UNNAMED1>                               | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_req                     | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin bit_0                                         |        7 |        1 | Covered  |
+#     | bin bit_1                                         |        7 |        1 | Covered  |
+#     | bin bit_2                                         |        7 |        1 | Covered  |
+#     | bin bit_3                                         |        4 |        1 | Covered  |
+#     | bin all_ones                                      |        7 |        1 | Covered  |
+#     | bin all_zeros                                     |        4 |        1 | Covered  |
+#     | default bin others                                |       63 |    -     | Occurred |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_code                    | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin code[0]                                       |       11 |        1 | Covered  |
+#     | bin code[1]                                       |       13 |        1 | Covered  |
+#     | bin code[2]                                       |       26 |        1 | Covered  |
+#     | bin code[3]                                       |       49 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_valid                   | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin high                                          |       95 |        1 | Covered  |
+#     | bin low                                           |        4 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req0             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_0                                      |       53 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req1             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_1                                      |       29 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req2             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_2                                      |       41 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req3             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_3                                      |       71 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | CROSS <UNNAMED1>::cross_priority                  | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin <bit_0,code[0]>                               |        7 |        1 | Covered  |
+#     | bin <bit_1,code[1]>                               |        7 |        1 | Covered  |
+#     | bin <bit_2,code[2]>                               |        7 |        1 | Covered  |
+#     | bin <bit_3,code[3]>                               |        4 |        1 | Covered  |
+#     | bin <all_ones,code[3]>                            |        7 |        1 | Covered  |
+#     | bin <all_zeros,code[0]>                           |        4 |        1 | Covered  |
+#     ======================================================================================
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++       DESIGN UNITS      ++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# CUMULATIVE SUMMARY
+# =============================================
+# |    Coverage Type    | Weight | Hits/Total |
+# =============================================
+# | Covergroup Coverage |      1 |   100.000% |
+# |---------------------|--------|------------|
+# | Types               |        |      1 / 1 |
+# =============================================
+# CUMULATIVE DESIGN-BASED COVERAGE: 100.000%
+# COVERED DESIGN UNITS: 1 / 1
+# FILES: 1
+# 
+# 
+# CLASS - work.p_enc_pkg/\p_enc_pkg p_enc_coverage \
+# 
+# 
+#     SUMMARY
+#     =============================================
+#     |    Coverage Type    | Weight | Hits/Total |
+#     =============================================
+#     | Covergroup Coverage |      1 |   100.000% |
+#     |---------------------|--------|------------|
+#     | Types               |        |      1 / 1 |
+#     =============================================
+#     WEIGHTED AVERAGE: 100.000%
+# 
+# 
+#     COVERGROUP COVERAGE
+#     ======================================================================================
+#     |                    Covergroup                     |   Hits   |  Goal /  |  Status  |
+#     |                                                   |          | At Least |          |
+#     ======================================================================================
+#     | TYPE /\package p_enc_pkg\/p_enc_coverage/p_enc_cg | 100.000% | 100.000% | Covered  |
+#     ======================================================================================
+#     | INSTANCE <UNNAMED1>                               | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_req                     | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin bit_0                                         |        7 |        1 | Covered  |
+#     | bin bit_1                                         |        7 |        1 | Covered  |
+#     | bin bit_2                                         |        7 |        1 | Covered  |
+#     | bin bit_3                                         |        4 |        1 | Covered  |
+#     | bin all_ones                                      |        7 |        1 | Covered  |
+#     | bin all_zeros                                     |        4 |        1 | Covered  |
+#     | default bin others                                |       63 |    -     | Occurred |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_code                    | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin code[0]                                       |       11 |        1 | Covered  |
+#     | bin code[1]                                       |       13 |        1 | Covered  |
+#     | bin code[2]                                       |       26 |        1 | Covered  |
+#     | bin code[3]                                       |       49 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_valid                   | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin high                                          |       95 |        1 | Covered  |
+#     | bin low                                           |        4 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req0             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_0                                      |       53 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req1             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_1                                      |       29 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req2             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_2                                      |       41 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_toggle_req3             | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin toggle_3                                      |       71 |        1 | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | CROSS <UNNAMED1>::cross_priority                  | 100.000% | 100.000% | Covered  |
+#     |---------------------------------------------------|----------|----------|----------|
+#     | bin <bit_0,code[0]>                               |        7 |        1 | Covered  |
+#     | bin <bit_1,code[1]>                               |        7 |        1 | Covered  |
+#     | bin <bit_2,code[2]>                               |        7 |        1 | Covered  |
+#     | bin <bit_3,code[3]>                               |        4 |        1 | Covered  |
+#     | bin <all_ones,code[3]>                            |        7 |        1 | Covered  |
+#     | bin <all_zeros,code[0]>                           |        4 |        1 | Covered  |
+#     ======================================================================================
+# 
+exec cat simulation.log;
+# vsim +access+r;
+# # ELBREAD: Elaboration process.
+# # ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# # ELBREAD: Elaboration time 0.8 [s].
+# # KERNEL: Main thread initiated.
+# # KERNEL: Kernel process initialization phase.
+# # ELAB2: Elaboration final pass...
+# # KERNEL: PLI/VHPI kernel's engine initialization done.
+# # PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# # ELAB2: Create instances ...
+# # KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# # KERNEL: Time resolution set to 1ns.
+# # ELAB2: Create instances complete.
+# # SLP: Started
+# # SLP: Elaboration phase ...
+# # SLP: Elaboration phase ... done : 0.0 [s]
+# # SLP: Generation phase ...
+# # SLP: Generation phase ... done : 0.1 [s]
+# # SLP: Finished : 0.1 [s]
+# # SLP: 0 primitives and 4 (30.77%) other processes in SLP
+# # SLP: 18 (0.06%) signals in SLP and 9 (0.03%) interface signals
+# # ELAB2: Elaboration final pass complete - time: 2.6 [s].
+# # KERNEL: SLP loading done - time: 0.0 [s].
+# # KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# # KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# # KERNEL: Kernel process initialization done.
+# # Allocation: Simulator allocated 30693 kB (elbread=2134 elab2=23662 kernel=4895 sdf=0)
+# # KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# # KERNEL: ----------------------------------------------------------------
+# # KERNEL: UVM-1.2
+# # KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# # KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# # KERNEL: (C) 2006-2014 Synopsys, Inc.
+# # KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# # KERNEL: (C) 2013-2014 NVIDIA Corporation
+# # KERNEL: ----------------------------------------------------------------
+# # KERNEL: 
+# # KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# # KERNEL: 
+# # KERNEL:   You are using a version of the UVM library that has been compiled
+# # KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# # KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# # KERNEL: 
+# # KERNEL:   You are using a version of the UVM library that has been compiled
+# # KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# # KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# # KERNEL: 
+# # KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# # KERNEL: 
+# # KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# run -all;
+# # KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test p_enc_test...
+# # KERNEL: UVM_INFO /home/runner/test.sv(20) @ 0: uvm_test_top [p_enc_test] Starting test...
+# # KERNEL: UVM_INFO /home/runner/master_seq.sv(20) @ 0: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 1...
+# # KERNEL: UVM_INFO /home/runner/sequence1.sv(13) @ 0: uvm_test_top.env.agent.sqr@@s1 [p_enc_base_sequence] Starting sequence body
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 11: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 11: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 21: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 21: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 31: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 31: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/sequence1.sv(24) @ 40: uvm_test_top.env.agent.sqr@@s1 [p_enc_base_sequence] Sequence body finished
+# # KERNEL: UVM_INFO /home/runner/master_seq.sv(23) @ 40: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 2...
+# # KERNEL: UVM_INFO /home/runner/sequence2.sv(11) @ 40: uvm_test_top.env.agent.sqr@@s2 [p_enc_conflict_seq] Starting all Ones Stimulus for all ports...
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 41: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 41: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @41 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/master_seq.sv(26) @ 50: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 3...
+# # KERNEL: UVM_INFO /home/runner/sequence3.sv(11) @ 50: uvm_test_top.env.agent.sqr@@s3 [p_enc_all_zeros_seq] Starting ALL ZEROS Stimulus for all ports...
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 51: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 51: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# # KERNEL: UVM_INFO /home/runner/master_seq.sv(29) @ 60: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 4...
+# # KERNEL: UVM_INFO /home/runner/sequence4.sv(11) @ 60: uvm_test_top.env.agent.sqr@@s4 [p_enc_random_seq] Starting random value Stimulus for all ports...
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 71: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 71: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 81: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 81: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 91: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 91: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @91 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 101: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 101: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 111: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 111: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 121: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 121: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 131: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 131: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 141: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 141: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 151: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 151: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 161: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 161: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @161 Priority is given to 3 (Req=1011, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 171: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 171: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @171 Priority is given to 3 (Req=1010, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 181: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 181: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 191: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 191: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @191 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 201: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 201: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 211: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 211: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 231: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 231: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 241: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 241: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @241 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 251: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 251: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 261: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 261: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @261 Priority is given to 3 (Req=1010, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 271: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 271: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @271 Priority is given to 3 (Req=1011, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 281: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 281: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 291: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 291: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 301: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 301: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 311: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 311: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 321: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 321: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 331: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 331: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 341: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 341: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @341 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 351: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 351: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 361: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 361: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 371: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 371: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 391: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 391: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 401: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 401: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 411: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 411: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @411 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 421: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 421: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 431: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 431: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 441: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 441: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 451: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 451: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 461: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 461: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 471: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 471: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 481: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 481: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @481 Priority is given to 3 (Req=1011, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 491: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 491: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @491 Priority is given to 3 (Req=1010, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 501: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 501: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 511: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 511: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @511 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 521: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 521: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 531: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 531: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 551: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 551: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 561: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 561: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @561 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 571: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 571: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 581: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 581: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @581 Priority is given to 3 (Req=1010, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 591: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 591: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @591 Priority is given to 3 (Req=1011, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 601: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 601: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 611: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 611: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 621: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 621: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 631: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 631: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 641: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 641: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 651: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 651: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 661: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 661: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @661 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 671: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 671: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 681: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 681: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 691: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 691: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 711: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 711: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 721: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 721: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 731: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 731: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @731 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 741: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 741: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 751: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 751: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 761: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 761: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 771: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 771: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 781: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 781: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 791: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 791: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 801: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 801: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @801 Priority is given to 3 (Req=1011, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 811: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 811: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @811 Priority is given to 3 (Req=1010, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 821: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 821: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 831: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 831: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @831 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 841: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 841: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 851: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 851: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1000-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 871: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 871: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 101-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 881: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 881: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1111-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @881 Priority is given to 3 (Req=1111, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 891: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 891: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 110-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 901: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 901: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1010-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @901 Priority is given to 3 (Req=1010, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 911: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 911: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1011-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @911 Priority is given to 3 (Req=1011, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 921: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 921: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1001-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 931: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 931: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 100-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 941: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 941: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1100-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 951: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 951: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1-> Got code =0, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 961: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 961: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 11-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 971: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 971: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 10-> Got code =1, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 981: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 981: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @981 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 991: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 991: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1001: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1001: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1011: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1011: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 0-> Got code =0, valid =0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1031: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1031: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1101-> Got code =3, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1041: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1041: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 111-> Got code =2, valid =1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(22) @ 1051: uvm_test_top.env.scb [p_enc_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(35) @ 1051: uvm_test_top.env.scb [SCB_PASS] PASS !! Req = 1110-> Got code =3, valid =1
+# # KERNEL: Info: assertion.sv (47): @1051 Priority is given to 3 (Req=1110, Code=11)
+# # KERNEL: UVM_INFO /home/runner/test.sv(26) @ 1110: uvm_test_top [p_enc_test] Test finished!
+# # KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 1110: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(44) @ 1110: uvm_test_top.env.scb [SCB_SUMMARY] Verification Complete: 99 Passed, 0 Failed
+# # KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 1110: reporter [UVM/REPORT/SERVER] 
+# # KERNEL: --- UVM Report Summary ---
+# # KERNEL: 
+# # KERNEL: ** Report counts by severity
+# # KERNEL: UVM_INFO :  213
+# # KERNEL: UVM_WARNING :    0
+# # KERNEL: UVM_ERROR :    0
+# # KERNEL: UVM_FATAL :    0
+# # KERNEL: ** Report counts by id
+# # KERNEL: [MASTER_SEQ]     4
+# # KERNEL: [RNTST]     1
+# # KERNEL: [SCB_PASS]    99
+# # KERNEL: [SCB_SUMMARY]     1
+# # KERNEL: [TEST_DONE]     1
+# # KERNEL: [UVM/RELNOTES]     1
+# # KERNEL: [p_enc_all_zeros_seq]     1
+# # KERNEL: [p_enc_base_sequence]     2
+# # KERNEL: [p_enc_conflict_seq]     1
+# # KERNEL: [p_enc_random_seq]     1
+# # KERNEL: [p_enc_scoreboard]    99
+# # KERNEL: [p_enc_test]     2
+# # KERNEL: 
+# # RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# # KERNEL: Time: 1110 ns,  Iteration: 56,  Instance: /tb_top,  Process: @INITIAL#16_0@.
+# # KERNEL: stopped at time: 1110 ns
+# # VSIM: Simulation has finished. There are no more test vectors to simulate.
