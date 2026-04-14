@@ -18,14 +18,14 @@ This repository contains a high-fidelity **UVM verification environment** for a 
 
 | Opcode (op)	| Operation	| Result (res)	| Carry (C) |
 | :---: | :---: | :---: | :---: |
-| 3'b000 | **ADD** | *A + B*     | Active |
-| 3'b010 | **SUB** | *A - B*     | Active (Borrow) |
-| 3'b011 | **AND** | *A & B*     | 0 |
-| 3'b011 | **OR**  | *A | B*     | 0 |
-| 3'b100 | **XOR** | *A ^ B*     | 0 |
-| 3'b101 | **NOT** | *~ A*       | 0 |
-| 3'b110 | **SHL** | *A << 1*    | 0 |
-| 3'b111 | **SHR** | *A >> 1*    | 0 |
+| 3'b000 | **ADD** | `A + B`    | Active |
+| 3'b010 | **SUB** | `A - B`     | Active (Borrow) |
+| 3'b011 | **AND** | `A & B`     | 0 |
+| 3'b011 | **OR**  | `A or B`    | 0 |
+| 3'b100 | **XOR** | `A ^ B`     | 0 |
+| 3'b101 | **NOT** | `~ A `      | 0 |
+| 3'b110 | **SHL** | `A << 1`   | 0 |
+| 3'b111 | **SHR** | `A >> 1`    | 0 |
 
 ## Key Flag Definitions
 
