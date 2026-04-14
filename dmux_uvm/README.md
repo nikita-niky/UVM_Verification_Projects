@@ -7,18 +7,18 @@ This repository features a **UVM-based verification environment** for a **32-bit
 ## Design Specifications
 
 * **Data Width:** 32-bit ($[31:0]$)
-* **Input:** Single 32-bit data input (`din`) and a 2-bit select line (`sel`).
+* **Input:** Single 32-bit data input (`d`) and a 2-bit select line (`sel`).
 * **Outputs:** Four 32-bit outputs (`y0`, `y1`, `y2`, `y3`).
-* **Logic:** The selected output reflects `din`, while non-selected outputs remain at `0` (or a default state).
+* **Logic:** The selected output reflects `d`, while non-selected outputs remain at `0` (or a default state).
 
 ### Truth Table
 
 | Select ($S_1, S_0$) | $Y_0$ | $Y_1$ | $Y_2$ | $Y_3$ |
 | :---: | :---: | :---: | :---: | :---: |
-| 00 | Din | 0 | 0 | 0 |
-| 01 | 0 | Din | 0 | 0 |
-| 10 | 0 | 0 | Din | 0 |
-| 11 | 0 | 0 | 0 | Din |
+| 00 | D | 0 | 0 | 0 |
+| 01 | 0 | D | 0 | 0 |
+| 10 | 0 | 0 | D | 0 |
+| 11 | 0 | 0 | 0 | D |
 
 ---
 
