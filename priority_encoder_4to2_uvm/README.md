@@ -33,13 +33,13 @@ White-box verification ensures combinational logic integrity and protocol compli
 A dedicated UVM Subscriber tracks high-quality coverage metrics to ensure verification closure:
 
 * **Toggle Coverage:** Tracks `0 -> 1` and `1 -> 0` transitions for every bit of the request bus.
-* **Cross Coverage (`cross_priority`):** Monitors the relationship between req and code.
+* **Cross Coverage (`cross_priority`):** Monitors the relationship between `req` and `code`.
 * **Intelligent Binning:** Uses `ignore_bins` to exclude logically impossible combinations (e.g., `req[3]` active but `code` being anything other than `3`), ensuring realistic and accurate coverage reporting.
 
 ## Test Sequences & Stimulus Strategy
 
 To ensure the priority arbitration logic and valid bit signaling are robust, the following sequences were implemented:
----
+
 |    Sequence Name      |    Objective    |  Scenario Targeted  |
 | :---: | :---: | :---: |
 | `p_enc_base_seq`	    | **One-Hot Verification**	|Iterates through `4'b0001` to `4'b1000` to verify basic encoding paths without overlapping bits.       |
