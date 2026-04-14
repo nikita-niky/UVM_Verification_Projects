@@ -66,11 +66,8 @@ I developed targeted sequences to stress-test the arbiter's decision-making logi
 |     Sequence Name       |    Objective     | Scenario Targeted |
 | :---: | :---: | :---: |
 |`arbiter_directed_sequence`| **Sanity Check**| Walks through every request bit individually (`0001` → `0010` → `0100` → `1000`). This ensures each master can successfully gain bus access when no competition exists.|
-
 |`arbiter_starvation_sequence`| **Starvation Test**| Drives continuous requests on `req[0]` while occasionally asserting `req[3]`. This verifies that the lower-priority agent is correctly blocked (starved) as per the fixed-priority specification.|
-
 |`arbiter_stress_sequence`|**Stress Test**| Uses CRV to drive multi-bit request patterns (e.g., `4'b1101`) to ensure the highest-priority bit is always the only one granted.|
-
 |`arbiter_reset_sequence`|**Reset Injection**| Validates that a mid-operation reset immediately drops all grants, preventing "hanging" bus access.|
 
 ---
