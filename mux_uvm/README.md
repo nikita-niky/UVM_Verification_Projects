@@ -6,10 +6,10 @@ This repository contains a production-grade **UVM (Universal Verification Method
 
 ## Design Specifications
 
-**Data Width:** 32-bit ($[31:0]$)
-**Inputs:** Four data inputs (`d0`, `d1`, `d2`, `d3`) and a 2-bit select line (`sel`).
-**Output:** Single 32-bit output (`y`).
-**Logic:** Combinational logic based on the select lines.
+* **Data Width:** 32-bit ($[31:0]$).
+* **Inputs:** Four data inputs (`d0`, `d1`, `d2`, `d3`) and a 2-bit select line (`sel`).
+* **Output:** Single 32-bit output (`y`).
+* **Logic:** Combinational logic based on the select lines.
 
 ## Truth Table
 
