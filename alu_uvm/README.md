@@ -9,21 +9,21 @@ This repository contains a high-fidelity **UVM verification environment** for a 
 * **Word Size:** 4-bit operands ($A, B$) and Result ($res$).
 * **Operations:** ADD, SUB, AND, OR, XOR, NOT, SHL, SHR.
 * **Status Flags:**
- * **Carry (C):** Unsigned carry-out/borrow.
- * **Zero (Z):** Asserted if the result is 4'b0000.
- * **Negative (N):** Reflects the sign bit (MSB) of the result.
- * **Overflow (V):** Asserted for signed arithmetic overflows (e.g., Pos + Pos = Neg).
+ * * **Carry (C):** Unsigned carry-out/borrow.
+ * * **Zero (Z):** Asserted if the result is 4'b0000.
+ * * **Negative (N):** Reflects the sign bit (MSB) of the result.
+ * * **Overflow (V):** Asserted for signed arithmetic overflows (e.g., Pos + Pos = Neg).
 
 ## ALU Operational Truth Table
 
 | Opcode (op)	| Operation	| Result (res)	| Carry (C) |
 | :---: | :---: | :---: | :---: |
-| 3'b000 | **ADD** | *A + B*      | Active |
-| 3'b010 | **SUB** | *A - B *     | Active (Borrow) |
-| 3'b011 | **AND** | *A & B *     | 0 |
-| 3'b011 | **OR**  | *A | B*      | 0 |
-| 3'b100 | **XOR** | *A ^ B* | 0 |
-| 3'b101 | **NOT** | *~ A*     | 0 |
+| 3'b000 | **ADD** | *A + B*     | Active |
+| 3'b010 | **SUB** | *A - B*     | Active (Borrow) |
+| 3'b011 | **AND** | *A & B*     | 0 |
+| 3'b011 | **OR**  | *A | B*     | 0 |
+| 3'b100 | **XOR** | *A ^ B*     | 0 |
+| 3'b101 | **NOT** | *~ A*       | 0 |
 | 3'b110 | **SHL** | *A << 1*    | 0 |
 | 3'b111 | **SHR** | *A >> 1*    | 0 |
 
@@ -46,8 +46,8 @@ White-box assertions are bound to the RTL to verify timing-critical flag logic:
 * **Reset Integrity:** Ensures all outputs and flags are cleared on `rst`.
 
 * **Flag Logic:**
- * **Zero/Neg:** Verified using the `<->` (equivalence) operator against the result.
- * **Logic Cleanliness:** Asserts that `carry` and `ovfl` must be 0 during logical operations (AND, OR, etc.).
+ * * **Zero/Neg:** Verified using the `<->` (equivalence) operator against the result.
+ * * **Logic Cleanliness:** Asserts that `carry` and `ovfl` must be 0 during logical operations (AND, OR, etc.).
 
 ## 2. Functional Coverage
 
@@ -58,8 +58,8 @@ The alu_coverage subscriber ensures high-quality verification closure through:
 * **Transition Coverage:** Tracks opcode switching (e.g., ADD $\rightarrow$ XOR) to ensure no state-leaking between math and logic modes.
 
 * **Cross Coverage:**
- * **cross_math_ovfl:** Verifies that overflow was triggered specifically during ADD and SUB.
- * **cross_sub_neg:** Ensures negative results were specifically tested during subtraction.
+ * * **cross_math_ovfl:** Verifies that overflow was triggered specifically during ADD and SUB.
+ * * **cross_sub_neg:** Ensures negative results were specifically tested during subtraction.
 
 * **Illegal Bins:** Automatically flags if carry or ovfl are asserted during logical operations.
 
