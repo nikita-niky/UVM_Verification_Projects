@@ -1,28 +1,31 @@
 # 4:1 Multiplexer UVM Verification Environment
 
 ## Project Overview
+
 This repository contains a production-grade **UVM (Universal Verification Methodology)** testbench used to verify a **32-bit 4:1 Multiplexer**. The goal of this project was to move beyond simple directed testing and implement a scalable, constrained-random verification environment.
 
 ## Design Specifications
+
 **Data Width:** 32-bit ($[31:0]$)
 **Inputs:** Four data inputs (`d0`, `d1`, `d2`, `d3`) and a 2-bit select line (`sel`).
 **Output:** Single 32-bit output (`y`).
 **Logic:** Combinational logic based on the select lines.
 
 ## Truth Table
-_________________________________
+
 | Select($S1​,S0$​) | Output ($Y$) |
 | :---: | :---: |
 |  00  | D0 |
 |  01  | D1 | 
 |  10  | D2 |
 |  11  | D3 |
-__________________________
 ---
 ## Testbench Architecture
+
 The verification environment is built using a layered UVM approach to ensure reusability and modularity.
 
 ## Key Components:
+
 * **UVM Agent:** Encapsulates the Sequencer, Driver, and Monitor.
 * **Driver:** Drives constrained-random stimulus into the virtual interface.
 * **Monitor:** Observes the interface signals and converts them into transaction objects.
@@ -33,6 +36,7 @@ The verification environment is built using a layered UVM approach to ensure reu
 ## Verification Features
 
 ### 1. Constrained Random Stimulus
+
 Used SystemVerilog constraints to ensure all input ports received a wide range of values, including corner cases like:
 
 * **Extreme Values:** All inputs set to `0x00000000` or `0xFFFFFFFF`.
@@ -40,6 +44,7 @@ Used SystemVerilog constraints to ensure all input ports received a wide range o
 * **Data Patterns:** Walking bit patterns.
 
 ## 2. Assertions (SVA)
+
 Implemented **SystemVerilog Assertions** to verify timing-independent behavior:
 
 * **Output Match:** Ensures that when sel is `2'b00`, `y` exactly matches `d0` without lag.
@@ -48,6 +53,7 @@ Implemented **SystemVerilog Assertions** to verify timing-independent behavior:
 
 
 ## 3. Functional Coverage
+
 Defined a covergroup to ensure **100% coverage** of:
 
 * All 4 select combinations.
@@ -57,7 +63,6 @@ Defined a covergroup to ensure **100% coverage** of:
 
 To achieve high functional and toggle coverage, the following sequences were implemented:
 
----
 | Sequence Name        | Objective           | Scenario Targeted |
 | :---: | :---: | :---: |
 | `mux_base_seq`       | **Stress Test**     | 500 iterations ofconstrained random data to find unexpected RTL bugs.                          |
