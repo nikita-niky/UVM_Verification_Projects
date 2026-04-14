@@ -74,3 +74,9 @@ The environment utilizes specialized sequences to stress-test the combinational 
 * **Language:** SystemVerilog, UVM
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
+
+
+
+## Technical Insight for Recruiters
+
+"This verification environment goes beyond simple functional checks. By implementing **X-propagation sequences** and **stability assertions**, the testbench ensures that the decoder behaves predictably in real-world SoC environments where 'X' values and glitches are common integration challenges."

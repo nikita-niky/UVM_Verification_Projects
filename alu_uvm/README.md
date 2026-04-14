@@ -82,3 +82,8 @@ The environment utilizes a dual-layered stimulus approach to ensure all arithmet
 * **Language:** SystemVerilog, UVM
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
+
+
+## Technical Insight for Recruiters
+
+"Verifying an ALU requires more than just checking the result; it requires verifying the **processor status bits**. My environment uses SVA to ensure that the Negative and Overflow flags behave according to signed 2's complement rules, while coverage ensures that boundary conditions like 'Borrow' in subtraction are fully exercised."
