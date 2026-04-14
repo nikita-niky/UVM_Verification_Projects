@@ -80,4 +80,4 @@ To achieve high functional and toggle coverage for the data distribution paths, 
 
 * **Language:** SystemVerilog, UVM
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
-* **Methodology:** Constrained Random Verification (CRV)
+* **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
