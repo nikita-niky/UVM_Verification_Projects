@@ -35,7 +35,7 @@ The verification environment is built using a layered UVM approach to ensure reu
 
 ## Verification Features
 
-### 1. Constrained Random Stimulus
+## 1. Constrained Random Stimulus
 
 Used SystemVerilog constraints to ensure all input ports received a wide range of values, including corner cases like:
 
