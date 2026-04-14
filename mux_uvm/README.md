@@ -65,7 +65,7 @@ To achieve high functional and toggle coverage, the following sequences were imp
 
 | Sequence Name        | Objective           | Scenario Targeted |
 | :---: | :---: | :---: |
-| `mux_base_seq`       | **Stress Test**     | 500 iterations ofconstrained random data to find unexpected RTL bugs.                          |
+| `mux_base_seq`       | **Stress Test**     | 500 iterations of constrained random data to find unexpected RTL bugs.                         |
 | `mux_all_ones_seq`   | **Corner Case**     | Verifies the 32-bit bus can hold and transition `0xFFFF_FFFF` across all ports.                |
 | `mux_all_zeros_seq`  | **Corner Case**     | Verifies the output correctly pulls to `0` for each select combination.                        |
 | `mux_select_unknown` | **Error Handling**  | Injects `2'bx` into the select line to verify how the RTL/Scoreboard handles "X" propagation.  |
