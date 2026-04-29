@@ -1,0 +1,197 @@
+# vsim +access+r;
+# # ELBREAD: Elaboration process.
+# # ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# # ELBREAD: Elaboration time 0.7 [s].
+# # KERNEL: Main thread initiated.
+# # KERNEL: Kernel process initialization phase.
+# # ELAB2: Elaboration final pass...
+# # KERNEL: PLI/VHPI kernel's engine initialization done.
+# # PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# # ELAB2: Create instances ...
+# # KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# # KERNEL: Time resolution set to 1ns.
+# # ELAB2: Create instances complete.
+# # SLP: Started
+# # SLP: Elaboration phase ...
+# # SLP: Elaboration phase ... done : 0.1 [s]
+# # SLP: Generation phase ...
+# # SLP: Generation phase ... done : 0.1 [s]
+# # SLP: Finished : 0.1 [s]
+# # SLP: 0 primitives and 17 (45.95%) other processes in SLP
+# # SLP: 83 (0.26%) signals in SLP and 142 (0.45%) interface signals
+# # ELAB2: Elaboration final pass complete - time: 2.3 [s].
+# # KERNEL: SLP loading done - time: 0.0 [s].
+# # KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# # KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# # KERNEL: Kernel process initialization done.
+# # Allocation: Simulator allocated 32176 kB (elbread=2179 elab2=24843 kernel=5153 sdf=0)
+# # KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# # KERNEL: ----------------------------------------------------------------
+# # KERNEL: UVM-1.2
+# # KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# # KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# # KERNEL: (C) 2006-2014 Synopsys, Inc.
+# # KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# # KERNEL: (C) 2013-2014 NVIDIA Corporation
+# # KERNEL: ----------------------------------------------------------------
+# # KERNEL: 
+# # KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# # KERNEL: 
+# # KERNEL:   You are using a version of the UVM library that has been compiled
+# # KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# # KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# # KERNEL: 
+# # KERNEL:   You are using a version of the UVM library that has been compiled
+# # KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# # KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# # KERNEL: 
+# # KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# # KERNEL: 
+# # KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# run -all;
+# # KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test fifo_ovfl_test...
+# # KERNEL: UVM_INFO /home/runner/test_3.sv(33) @ 0: uvm_test_top [fifo_ovfl_test] Starting test...
+# # KERNEL: UVM_INFO /home/runner/sequence3.sv(15) @ 0: uvm_test_top.env.wr_agent.sqr@@wr_seq [fifo_ovfl_seq] Starting fifo_ovfl_seq Stimulus for all ports...
+# # KERNEL: UVM_INFO /home/runner/sequence3.sv(15) @ 0: uvm_test_top.env.rd_agent.sqr@@rd_seq [fifo_ovfl_seq] Starting fifo_ovfl_seq Stimulus for all ports...
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 0: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 0, wdata =0, winc= 0, 
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 0: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 0, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(29) @ 15: uvm_test_top.env.scb [SCB] Reset detected, clearing WR queue
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 15: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 0, wdata =0, winc= 0, 
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(57) @ 39: uvm_test_top.env.scb [SCB] Reset detected, clearing RD queue
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 39: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 0, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/sequence3.sv(22) @ 65: uvm_test_top.env.wr_agent.sqr@@wr_seq [SEQ] Starting Writes
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 65: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =70, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 75: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =70, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 75: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 75: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=70 , count=1
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 75: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =35, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 95: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =35, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 95: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 95: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=35 , count=2
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 95: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =d3, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 115: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =d3, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 115: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 115: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=d3 , count=3
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 115: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =4c, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/sequence3.sv(30) @ 121: uvm_test_top.env.rd_agent.sqr@@rd_seq [SEQ] Starting Reads
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 121: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 135: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =4c, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 135: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 135: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=4c , count=4
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 135: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =9e, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 155: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =9e, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 155: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 155: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=9e , count=5
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 155: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =cb, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 169: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 175: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =cb, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 175: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 175: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=cb , count=6
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 175: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =d1, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 195: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =d1, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 195: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 195: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=d1 , count=7
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 195: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =b2, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 215: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =b2, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 215: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 215: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=b2 , count=8
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 215: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =6c, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 221: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 235: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =6c, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 235: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 235: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=6c , count=9
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 235: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =1, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 255: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =1, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 255: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 255: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=1 , count=10
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 255: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =6f, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 273: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 275: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =6f, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 275: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 275: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=6f , count=11
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 275: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =b8, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 295: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =b8, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 295: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 295: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=b8 , count=12
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 295: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =da, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 315: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =da, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 315: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 315: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=da , count=13
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 315: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =d7, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 325: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 335: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =d7, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 335: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 335: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=d7 , count=14
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 335: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =ad, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 355: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =ad, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 355: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 355: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=ad , count=15
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 355: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =5e, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(46) @ 375: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =5e, winc= 1, wfull=0
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 375: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(43) @ 375: uvm_test_top.env.scb [SCB_WR] DATA WRITTEN=5e , count=16
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 375: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =e8, winc= 1, 
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 377: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(59) @ 395: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =e8, winc= 1, wfull=1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 395: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 395: uvm_test_top.env.scb [SCB_wr_ig] Write ignored correctly: FIFO Full
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 395: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =4d, winc= 1, 
+# # KERNEL: Error: assertion.sv (36): OVERFLOW !!, write ignored because full detected
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(59) @ 415: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =4d, winc= 1, wfull=1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 415: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 415: uvm_test_top.env.scb [SCB_wr_ig] Write ignored correctly: FIFO Full
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 415: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =8b, winc= 1, 
+# # KERNEL: Error: assertion.sv (36): OVERFLOW !!, write ignored because full detected
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 429: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(59) @ 435: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =8b, winc= 1, wfull=1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 435: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 435: uvm_test_top.env.scb [SCB_wr_ig] Write ignored correctly: FIFO Full
+# # KERNEL: UVM_INFO /home/runner/wr_driver.sv(33) @ 435: uvm_test_top.env.wr_agent.drv [WR_DRV] wrst_n = 1, wdata =a4, winc= 1, 
+# # KERNEL: Error: assertion.sv (36): OVERFLOW !!, write ignored because full detected
+# # KERNEL: UVM_INFO /home/runner/wr_monitor.sv(59) @ 455: uvm_test_top.env.wr_agent.mon [WR_MON] wrst_n = 1, wdata =a4, winc= 1, wfull=1
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(37) @ 455: uvm_test_top.env.scb [fifo_scoreboard] Scoreboard received item
+# # KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 455: uvm_test_top.env.scb [SCB_wr_ig] Write ignored correctly: FIFO Full
+# # KERNEL: Error: assertion.sv (36): OVERFLOW !!, write ignored because full detected
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 481: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 533: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 585: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 637: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 689: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 741: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 793: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 845: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 897: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 949: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 1001: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 1053: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/rd_driver.sv(33) @ 1105: uvm_test_top.env.rd_agent.drv [RD_DRV] rrst_n = 1, rinc= 0
+# # KERNEL: UVM_INFO /home/runner/test_3.sv(41) @ 1257: uvm_test_top [fifo_ovfl_test] Test finished!
+# # KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 1257: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# # KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 1257: reporter [UVM/REPORT/SERVER] 
+# # KERNEL: --- UVM Report Summary ---
+# # KERNEL: 
+# # KERNEL: ** Report counts by severity
+# # KERNEL: UVM_INFO :  115
+# # KERNEL: UVM_WARNING :    0
+# # KERNEL: UVM_ERROR :    0
+# # KERNEL: UVM_FATAL :    0
+# # KERNEL: ** Report counts by id
+# # KERNEL: [RD_DRV]    22
+# # KERNEL: [RNTST]     1
+# # KERNEL: [SCB]     2
+# # KERNEL: [SCB_WR]    16
+# # KERNEL: [SCB_wr_ig]     4
+# # KERNEL: [SEQ]     2
+# # KERNEL: [TEST_DONE]     1
+# # KERNEL: [UVM/RELNOTES]     1
+# # KERNEL: [WR_DRV]    22
+# # KERNEL: [WR_MON]    20
+# # KERNEL: [fifo_ovfl_seq]     2
+# # KERNEL: [fifo_ovfl_test]     2
+# # KERNEL: [fifo_scoreboard]    20
+# # KERNEL: 
+# # RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# # KERNEL: Time: 1257 ns,  Iteration: 56,  Instance: /tb_top,  Process: @INITIAL#48_2@.
+# # KERNEL: stopped at time: 1257 ns
+# # VSIM: Simulation has finished. There are no more test vectors to simulate.

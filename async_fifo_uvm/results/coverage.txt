@@ -1,0 +1,201 @@
+acdb merge -o final.acdb -i directed.acdb -i random.acdb -i ovfl.acdb -i udfl.acdb -i stress.acdb -i reset.acdb
+acdb report -db final.acdb -txt -o coverage_summary.txt
+exec cat coverage_summary.txt
+# +++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++       REPORT INFO       ++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# SUMMARY
+# ========================================================
+# |     Property     |               Value               |
+# ========================================================
+# | User             | runner                            |
+# | Host             | 45700f555a8a                      |
+# | Tool             | Riviera-PRO 2025.04               |
+# | Report file      | /home/runner/coverage_summary.txt |
+# | Report date      | 2026-04-29 07:16                  |
+# | Report arguments |                                   |
+# | Input file       | /home/runner/final.acdb           |
+# | Input file date  | 2026-04-29 07:16                  |
+# | Number of tests  | 6                                 |
+# ========================================================
+# 
+# 
+# TEST DETAILS
+# ================================================================================
+# | Property |                               Value                               |
+# ================================================================================
+# | Test     | directed.acdb:fifo_directed_test                                  |
+# | Status   | Error                                                             |
+# | Args     | asim +access+r -acdb work.tb_top +UVM_TESTNAME=fifo_directed_test |
+# | Simtime  | 2947 ns                                                           |
+# | Cputime  | 1.372 s                                                           |
+# | Seed     | 1                                                                 |
+# | Date     | 2026-04-29 07:16                                                  |
+# | User     | runner                                                            |
+# | Host     | 45700f555a8a                                                      |
+# | Host os  | Linux64                                                           |
+# | Tool     | Riviera-PRO 2025.04 (simulator)                                   |
+# |----------|-------------------------------------------------------------------|
+# | Test     | random.acdb:fifo_random_test                                      |
+# | Status   | Error                                                             |
+# | Args     | asim +access+r -acdb work.tb_top +UVM_TESTNAME=fifo_random_test   |
+# | Simtime  | 21047 ns                                                          |
+# | Cputime  | 6.898 s                                                           |
+# | Seed     | 1                                                                 |
+# | Date     | 2026-04-29 07:16                                                  |
+# | User     | runner                                                            |
+# | Host     | 45700f555a8a                                                      |
+# | Host os  | Linux64                                                           |
+# | Tool     | Riviera-PRO 2025.04 (simulator)                                   |
+# |----------|-------------------------------------------------------------------|
+# | Test     | ovfl.acdb:fifo_ovfl_test                                          |
+# | Status   | Error                                                             |
+# | Args     | asim +access+r -acdb work.tb_top +UVM_TESTNAME=fifo_ovfl_test     |
+# | Simtime  | 1257 ns                                                           |
+# | Cputime  | 0.773 s                                                           |
+# | Seed     | 1                                                                 |
+# | Date     | 2026-04-29 07:16                                                  |
+# | User     | runner                                                            |
+# | Host     | 45700f555a8a                                                      |
+# | Host os  | Linux64                                                           |
+# | Tool     | Riviera-PRO 2025.04 (simulator)                                   |
+# |----------|-------------------------------------------------------------------|
+# | Test     | udfl.acdb:fifo_udfl_test                                          |
+# | Status   | Error                                                             |
+# | Args     | asim +access+r -acdb work.tb_top +UVM_TESTNAME=fifo_udfl_test     |
+# | Simtime  | 1257 ns                                                           |
+# | Cputime  | 0.807 s                                                           |
+# | Seed     | 1                                                                 |
+# | Date     | 2026-04-29 07:16                                                  |
+# | User     | runner                                                            |
+# | Host     | 45700f555a8a                                                      |
+# | Host os  | Linux64                                                           |
+# | Tool     | Riviera-PRO 2025.04 (simulator)                                   |
+# |----------|-------------------------------------------------------------------|
+# | Test     | stress.acdb:fifo_stress_test                                      |
+# | Status   | Ok                                                                |
+# | Args     | asim +access+r -acdb work.tb_top +UVM_TESTNAME=fifo_stress_test   |
+# | Simtime  | 1881 ns                                                           |
+# | Cputime  | 1.062 s                                                           |
+# | Seed     | 1                                                                 |
+# | Date     | 2026-04-29 07:16                                                  |
+# | User     | runner                                                            |
+# | Host     | 45700f555a8a                                                      |
+# | Host os  | Linux64                                                           |
+# | Tool     | Riviera-PRO 2025.04 (simulator)                                   |
+# |----------|-------------------------------------------------------------------|
+# | Test     | reset.acdb:fifo_reset_op_test                                     |
+# | Status   | Error                                                             |
+# | Args     | asim +access+r -acdb work.tb_top +UVM_TESTNAME=fifo_reset_op_test |
+# | Simtime  | 12411 ns                                                          |
+# | Cputime  | 3.271 s                                                           |
+# | Seed     | 1                                                                 |
+# | Date     | 2026-04-29 07:16                                                  |
+# | User     | runner                                                            |
+# | Host     | 45700f555a8a                                                      |
+# | Host os  | Linux64                                                           |
+# | Tool     | Riviera-PRO 2025.04 (simulator)                                   |
+# ================================================================================
+# 
+# 
+# +++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++     DESIGN HIERARCHY    ++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++
+# 
+# 
+# CUMULATIVE SUMMARY
+# =============================================
+# |    Coverage Type    | Weight | Hits/Total |
+# =============================================
+# | Covergroup Coverage |      1 |   100.000% |
+# |---------------------|--------|------------|
+# | Types               |        |      1 / 1 |
+# =============================================
+# CUMULATIVE INSTANCE-BASED COVERAGE: 100.000%
+# COVERED INSTANCES: 1 / 1
+# FILES: 1
+# 
+# 
+# CLASS - /\package fifo_pkg\/fifo_coverage : work.fifo_pkg/\fifo_pkg fifo_coverage \
+# 
+# 
+#     SUMMARY
+#     =============================================
+#     |    Coverage Type    | Weight | Hits/Total |
+#     =============================================
+#     | Covergroup Coverage |      1 |   100.000% |
+#     |---------------------|--------|------------|
+#     | Types               |        |      1 / 1 |
+#     =============================================
+#     WEIGHTED AVERAGE LOCAL: 100.000%
+# 
+# 
+#     COVERGROUP COVERAGE
+#     ===================================================================================
+#     |                   Covergroup                   |   Hits   |  Goal /  |  Status  |
+#     |                                                |          | At Least |          |
+#     ===================================================================================
+#     | TYPE /\package fifo_pkg\/fifo_coverage/fifo_cg | 100.000% | 100.000% | Covered  |
+#     ===================================================================================
+#     | INSTANCE <UNNAMED1>                            | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_wrst_n               | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin rst_active                                 |        6 |        1 | Covered  |
+#     | bin rst_inactive                               |      439 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_rrst_n               | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin rst_active                                 |        8 |        1 | Covered  |
+#     | bin rst_inactive                               |      209 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_winc                 | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin w_active                                   |      439 |        1 | Covered  |
+#     | bin w_inactive                                 |        6 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_rinc                 | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin r_active                                   |      209 |        1 | Covered  |
+#     | bin r_inactive                                 |        8 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_full                 | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin is_full                                    |      221 |        1 | Covered  |
+#     | bin not_full                                   |      224 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_empty                | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin is_empty                                   |        8 |        1 | Covered  |
+#     | bin not_empty                                  |      209 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_wdata                | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin zeros                                      |        6 |        1 | Covered  |
+#     | bin ones                                       |        1 |        1 | Covered  |
+#     | bin alt_5                                      |        2 |        1 | Covered  |
+#     | bin alt_A                                      |        1 |        1 | Covered  |
+#     | bin walking_1                                  |       15 |        1 | Covered  |
+#     | default bin others                             |      637 |    -     | Occurred |
+#     |------------------------------------------------|----------|----------|----------|
+#     | COVERPOINT <UNNAMED1>::cp_rdata                | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin zeros                                      |        8 |        1 | Covered  |
+#     | bin ones                                       |        1 |        1 | Covered  |
+#     | bin alt_5                                      |        1 |        1 | Covered  |
+#     | bin alt_A                                      |        1 |        1 | Covered  |
+#     | bin walking_1                                  |        6 |        1 | Covered  |
+#     | default bin others                             |      645 |    -     | Occurred |
+#     |------------------------------------------------|----------|----------|----------|
+#     | CROSS <UNNAMED1>::rst_x_full                   | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin <rst_active,not_full>                      |        6 |        1 | Covered  |
+#     | bin when_rst_not_active                        |      439 |        1 | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | CROSS <UNNAMED1>::rd_empty                     | 100.000% | 100.000% | Covered  |
+#     |------------------------------------------------|----------|----------|----------|
+#     | bin <is_empty,rst_active>                      |        8 |        1 | Covered  |
+#     | bin when_rst_not_active                        |      209 |        1 | Covered  |
+#     ===================================================================================
