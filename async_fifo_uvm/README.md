@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains a comprehensive **UVM (Universal Verification Methodology)** environment designed to verify a dual-clock (asynchronous) FIFO. The project focuses on handling Clock Domain Crossing (CDC) challenges, pointer synchronization using Gray coding, and robust reset recovery.
+This repository contains a comprehensive **UVM (Universal Verification Methodology)** environment designed to verify a **dual-clock Asynchronous FIFO**. The project focuses on handling Clock Domain Crossing (CDC) challenges, pointer synchronization using Gray coding, and robust reset recovery.
 
 ## Key Features:
 
