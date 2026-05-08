@@ -1,0 +1,615 @@
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = ./work/work.lib
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol transferr has not been declared in module apb_master." "apb_master.sv" 82  22
+MESSAGE "ASRT_7002: Due to optimizations some assertions from source code will be evaluated in non LRM complaint mode. Use switch -ao_off to turn off this optimization."
+MESSAGE "Unit top modules: tb_top."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 6[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2025.04.139.9738 built for Linux64 on May 30, 2025.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2025 Aldec, Inc. All rights reserved.
+vsim +access+r;
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.6 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 6 (25.00%) other processes in SLP
+# SLP: 49 (0.16%) signals in SLP and 127 (0.41%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 31233 kB (elbread=2147 elab2=24129 kernel=4956 sdf=0)
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+run -all;
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test apb_test...
+# KERNEL: UVM_INFO /home/runner/test.sv(26) @ 0: uvm_test_top [apb_test] Starting test...
+# KERNEL: UVM_INFO /home/runner/monitor.sv(29) @ 0: uvm_test_top.env.agent.mon [MON_RST] RESET Asserted
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(25) @ 0: uvm_test_top.env.scb [SCB_RST] RESTE Detected clearing the model mem array
+# KERNEL: UVM_INFO /home/runner/monitor.sv(34) @ 20: uvm_test_top.env.agent.mon [MON_RST] Reset De-asserted
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(25) @ 40: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 1...
+# KERNEL: UVM_INFO /home/runner/sequence1.sv(12) @ 40: uvm_test_top.env.agent.sqr@@s1 [apb_write_read_seq] Starting sequence body
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 85: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=9f29115d, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 85: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000038 with Data = 9f29115d
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 95: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 95: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=9f29115d, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 115: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=9f29115d, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 115: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000038 with Data = 9f29115d
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 125: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 125: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=2f25565a, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 145: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=9f29115d, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 145: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000038, Expected = 9f29115d, Got = 9f29115d
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 155: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 155: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=1655706e, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 175: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=1655706e, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 175: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000010 with Data = 1655706e
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 185: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 185: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=ec301b0f, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 205: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=1655706e, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 205: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000010, Expected = 1655706e, Got = 1655706e
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 215: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 215: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=04ae2e90, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 235: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=04ae2e90, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 235: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000004 with Data = 04ae2e90
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 245: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 245: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=6645a479, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 265: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=04ae2e90, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 265: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000004, Expected = 04ae2e90, Got = 04ae2e90
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 275: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 275: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000014, Data=ce7fcf5c, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 295: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000014, Data=ce7fcf5c, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 295: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000014 with Data = ce7fcf5c
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 305: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 305: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000014, Data=e52aaccb, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 325: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000014, Data=ce7fcf5c, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 325: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000014, Expected = ce7fcf5c, Got = ce7fcf5c
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 335: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 335: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000003c, Data=c266d050, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 355: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000003c, Data=c266d050, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 355: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000003c with Data = c266d050
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 365: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 365: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000003c, Data=563864b3, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 385: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000003c, Data=c266d050, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 385: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000003c, Expected = c266d050, Got = c266d050
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 395: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 395: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000003c, Data=9ac2a35c, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 415: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000003c, Data=9ac2a35c, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 415: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000003c with Data = 9ac2a35c
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 425: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 425: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000003c, Data=471925e4, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 445: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000003c, Data=9ac2a35c, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 445: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000003c, Expected = 9ac2a35c, Got = 9ac2a35c
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 455: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 455: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=65ccddc2, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 475: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=65ccddc2, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 475: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000018 with Data = 65ccddc2
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 485: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 485: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=e0c43eca, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 505: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=65ccddc2, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 505: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000018, Expected = 65ccddc2, Got = 65ccddc2
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 515: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 515: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=a8037739, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 535: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=a8037739, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 535: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000010 with Data = a8037739
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 545: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 545: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=22fad841, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 565: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=a8037739, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 565: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000010, Expected = a8037739, Got = a8037739
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 575: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 575: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000020, Data=61666fc1, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 595: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000020, Data=61666fc1, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 595: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000020 with Data = 61666fc1
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 605: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 605: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000020, Data=dc5dd0c9, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 625: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000020, Data=61666fc1, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 625: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000020, Expected = 61666fc1, Got = 61666fc1
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 635: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 635: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=91f5c75a, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 655: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=91f5c75a, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 655: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = 91f5c75a
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 665: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 665: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=ec5dad0a, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 685: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=91f5c75a, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 685: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000008, Expected = 91f5c75a, Got = 91f5c75a
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 695: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 695: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=3a4d9b09, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 715: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=3a4d9b09, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 715: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000000c with Data = 3a4d9b09
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 725: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 725: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=b4a8df0c, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 745: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=3a4d9b09, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 745: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000000c, Expected = 3a4d9b09, Got = 3a4d9b09
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 755: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 755: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000002c, Data=589993bf, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 775: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000002c, Data=589993bf, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 775: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000002c with Data = 589993bf
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 785: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 785: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000002c, Data=d390f4c7, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 805: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000002c, Data=589993bf, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 805: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000002c, Expected = 589993bf, Got = 589993bf
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 815: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 815: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=eeae088b, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 835: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=eeae088b, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 835: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000024 with Data = eeae088b
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 845: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 845: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=69a56993, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 865: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=eeae088b, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 865: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000024, Expected = eeae088b, Got = eeae088b
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 875: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 875: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=fbeedc68, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 895: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=fbeedc68, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 895: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000034 with Data = fbeedc68
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 905: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 905: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=76e63d70, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 925: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=fbeedc68, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 925: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000034, Expected = fbeedc68, Got = fbeedc68
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 935: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 935: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000020, Data=a31526f3, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 955: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000020, Data=a31526f3, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 955: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000020 with Data = a31526f3
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 965: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 965: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000020, Data=fb53705e, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 985: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000020, Data=a31526f3, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 985: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000020, Expected = a31526f3, Got = a31526f3
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 995: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 995: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000028, Data=7bf5a155, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1015: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000028, Data=7bf5a155, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1015: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000028 with Data = 7bf5a155
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1025: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1025: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000028, Data=f6ed025d, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1045: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000028, Data=7bf5a155, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1045: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000028, Expected = 7bf5a155, Got = 7bf5a155
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1055: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1055: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=45536e56, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1075: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=45536e56, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1075: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = 45536e56
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1085: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1085: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=d92502b9, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1105: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=45536e56, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1105: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000008, Expected = 45536e56, Got = 45536e56
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1115: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1115: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=11e93263, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1135: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=11e93263, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1135: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000000 with Data = 11e93263
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1145: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1145: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=53a5438e, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1165: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=11e93263, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1165: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000000, Expected = 11e93263, Got = 11e93263
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1175: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1175: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000014, Data=39cc91b8, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1195: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000014, Data=39cc91b8, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1195: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000014 with Data = 39cc91b8
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1205: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1205: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000014, Data=b4c3f2c0, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1225: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000014, Data=39cc91b8, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1225: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000014, Expected = 39cc91b8, Got = 39cc91b8
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1235: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1235: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=12179ffb, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1255: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=12179ffb, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1255: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000004 with Data = 12179ffb
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1265: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1265: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=35d38f97, Write=0
+# KERNEL: UVM_INFO /home/runner/sequence1.sv(32) @ 1265: uvm_test_top.env.agent.sqr@@s1 [apb_write_read_seq] Sequence body finished
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1285: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=12179ffb, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1285: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000004, Expected = 12179ffb, Got = 12179ffb
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(30) @ 1315: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 2...
+# KERNEL: UVM_INFO /home/runner/sequence2.sv(13) @ 1315: uvm_test_top.env.agent.sqr@@s2 [apb_memory_stress_seq] Starting FULL MEMORY STRESS TEST
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1355: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=146d9741, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1355: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000000 with Data = 146d9741
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1365: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1365: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=146d9741, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1385: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=146d9741, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1385: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000000 with Data = 146d9741
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1395: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1395: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=577b4420, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1415: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=577b4420, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1415: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000004 with Data = 577b4420
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1425: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1425: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=61a24eb3, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1445: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=61a24eb3, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1445: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = 61a24eb3
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1455: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1455: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=43b16fc7, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1475: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=43b16fc7, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1475: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000000c with Data = 43b16fc7
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1485: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1485: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=d0484442, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1505: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=d0484442, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1505: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000010 with Data = d0484442
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1515: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1515: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000014, Data=81caaecb, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1535: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000014, Data=81caaecb, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1535: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000014 with Data = 81caaecb
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1545: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1545: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=e4602c0d, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1565: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=e4602c0d, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1565: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000018 with Data = e4602c0d
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1575: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1575: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=5e503b1f, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1595: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=5e503b1f, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1595: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000001c with Data = 5e503b1f
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1605: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1605: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000020, Data=bddbc61c, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1625: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000020, Data=bddbc61c, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1625: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000020 with Data = bddbc61c
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1635: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1635: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=aa840c3a, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1655: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=aa840c3a, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1655: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000024 with Data = aa840c3a
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1665: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1665: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000028, Data=5f0e06fe, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1685: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000028, Data=5f0e06fe, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1685: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000028 with Data = 5f0e06fe
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1695: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1695: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000002c, Data=3c1ce219, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1715: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000002c, Data=3c1ce219, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1715: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000002c with Data = 3c1ce219
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1725: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1725: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=66f9ad3d, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1745: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=66f9ad3d, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1745: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000030 with Data = 66f9ad3d
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1755: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1755: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=e55f3f32, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1775: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=e55f3f32, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1775: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000034 with Data = e55f3f32
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1785: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1785: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=42da5e16, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1805: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=42da5e16, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1805: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000038 with Data = 42da5e16
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 1815: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1815: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000003c, Data=e659a1bc, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1835: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000003c, Data=e659a1bc, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 1835: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000003c with Data = e659a1bc
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1845: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1845: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=ced106b1, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1865: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=146d9741, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1865: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000000, Expected = 146d9741, Got = 146d9741
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1875: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1875: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=5c8816b6, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1895: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=577b4420, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1895: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000004, Expected = 577b4420, Got = 577b4420
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1905: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1905: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=5f3798fd, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1925: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=61a24eb3, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1925: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000008, Expected = 61a24eb3, Got = 61a24eb3
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1935: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1935: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=4cd3ec61, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1955: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=43b16fc7, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1955: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000000c, Expected = 43b16fc7, Got = 43b16fc7
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1965: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1965: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=86fa1494, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 1985: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=d0484442, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 1985: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000010, Expected = d0484442, Got = d0484442
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 1995: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 1995: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000014, Data=4d9de0f9, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2015: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000014, Data=81caaecb, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2015: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000014, Expected = 81caaecb, Got = 81caaecb
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2025: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2025: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=8b6e0c6f, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2045: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=e4602c0d, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2045: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000018, Expected = e4602c0d, Got = e4602c0d
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2055: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2055: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=406a96f6, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2075: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=5e503b1f, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2075: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000001c, Expected = 5e503b1f, Got = 5e503b1f
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2085: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2085: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000020, Data=6c93808e, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2105: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000020, Data=bddbc61c, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2105: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000020, Expected = bddbc61c, Got = bddbc61c
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2115: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2115: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=0fe8c937, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2135: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=aa840c3a, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2135: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000024, Expected = aa840c3a, Got = aa840c3a
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2145: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2145: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000028, Data=2a6a70f1, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2165: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000028, Data=5f0e06fe, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2165: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000028, Expected = 5f0e06fe, Got = 5f0e06fe
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2175: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2175: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000002c, Data=bc1877bc, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2195: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000002c, Data=3c1ce219, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2195: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000002c, Expected = 3c1ce219, Got = 3c1ce219
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2205: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2205: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=c4f2dd98, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2225: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=66f9ad3d, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2225: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000030, Expected = 66f9ad3d, Got = 66f9ad3d
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2235: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2235: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=44f9a285, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2255: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=e55f3f32, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2255: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000034, Expected = e55f3f32, Got = e55f3f32
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2265: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2265: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=3c2cc683, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2285: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=42da5e16, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2285: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000038, Expected = 42da5e16, Got = 42da5e16
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2295: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2295: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000003c, Data=aa8c4992, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2315: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000003c, Data=e659a1bc, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 2315: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000003c, Expected = e659a1bc, Got = e659a1bc
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(35) @ 2345: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 3...
+# KERNEL: UVM_INFO /home/runner/sequence3.sv(13) @ 2345: uvm_test_top.env.agent.sqr@@s3 [SEQ] Injecting Out-of-Bounds Address to trigger PSLVERR
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2385: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000100, Data=deadbeef, Write=0, Err=1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2385: uvm_test_top.env.scb [SCB_SLVERR] Observed expected/actual SLVERR at Addr: 00000100
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2395: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2395: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000100, Data=xxxxxxxx, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2415: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000100, Data=deadbeef, Write=0, Err=1
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(32) @ 2415: uvm_test_top.env.scb [SCB_SLVERR] Observed expected/actual SLVERR at Addr: 00000100
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(40) @ 2445: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 4...
+# KERNEL: UVM_INFO /home/runner/sequence4.sv(10) @ 2445: uvm_test_top.env.agent.sqr@@s4 [SEQ] Starting Reset Check Sequence
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2485: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=aaaabbbb, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2485: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = aaaabbbb
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2495: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2495: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=aaaabbbb, Write=1
+# KERNEL: UVM_INFO /home/runner/sequence4.sv(19) @ 2495: uvm_test_top.env.agent.sqr@@s4 [SEQ] Ready for Reset trigger...
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2515: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=aaaabbbb, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2515: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = aaaabbbb
+# KERNEL: UVM_INFO /home/runner/master_seq.sv(45) @ 2545: uvm_test_top.env.agent.sqr@@seq [MASTER_SEQ] Starting Sequence 5...
+# KERNEL: UVM_INFO /home/runner/sequence5.sv(11) @ 2545: uvm_test_top.env.agent.sqr@@s5 [SEQ] Starting 5 Back-to-Back transfers
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2585: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=13684b8f, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2585: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000000 with Data = 13684b8f
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2595: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2595: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=13684b8f, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2615: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=13684b8f, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2615: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000000 with Data = 13684b8f
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2625: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2625: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000004, Data=f25531fc, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2645: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000004, Data=f25531fc, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2645: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000004 with Data = f25531fc
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2655: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2655: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=b02efed6, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2675: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=b02efed6, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2675: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = b02efed6
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2685: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2685: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=4cf5b21d, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2705: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=4cf5b21d, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2705: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000000c with Data = 4cf5b21d
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2715: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2715: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000010, Data=c8a94bd1, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2735: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000010, Data=c8a94bd1, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2735: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000010 with Data = c8a94bd1
+# KERNEL: UVM_INFO /home/runner/sequence4.sv(10) @ 2815: uvm_test_top.env.agent.sqr@@rst_seq [SEQ] Starting Reset Check Sequence
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2855: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=aaaabbbb, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2855: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = aaaabbbb
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2865: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2865: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000008, Data=aaaabbbb, Write=1
+# KERNEL: UVM_INFO /home/runner/sequence4.sv(19) @ 2865: uvm_test_top.env.agent.sqr@@rst_seq [SEQ] Ready for Reset trigger...
+# KERNEL: UVM_INFO /home/runner/test.sv(37) @ 2865: uvm_test_top [apb_test] Starting RESET test...
+# KERNEL: UVM_INFO /home/runner/test.sv(40) @ 2865: uvm_test_top [TEST] !!! TRIGGERING RESET DURING TRANSFERS !!!
+# KERNEL: UVM_INFO /home/runner/test.sv(44) @ 2915: uvm_test_top [TEST] Reset Released
+# KERNEL: UVM_INFO /home/runner/test.sv(50) @ 2915: uvm_test_top [TEST] Starting Recovery Sequence
+# KERNEL: UVM_INFO /home/runner/sequence1.sv(12) @ 2915: uvm_test_top.env.agent.sqr@@s1 [apb_write_read_seq] Starting sequence body
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2955: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000008, Data=aaaabbbb, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2955: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000008 with Data = aaaabbbb
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 2965: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2965: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=6584fff8, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 2985: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=6584fff8, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 2985: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000000c with Data = 6584fff8
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 2995: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 2995: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000000c, Data=f956945b, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3015: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000000c, Data=6584fff8, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3015: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000000c, Expected = 6584fff8, Got = 6584fff8
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3025: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3025: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000002c, Data=2601c4f9, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3045: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000002c, Data=2601c4f9, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3045: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000002c with Data = 2601c4f9
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3055: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3055: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000002c, Data=b9d3595c, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3075: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000002c, Data=2601c4f9, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3075: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000002c, Expected = 2601c4f9, Got = 2601c4f9
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3085: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3085: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000028, Data=6603052a, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3105: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000028, Data=6603052a, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3105: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000028 with Data = 6603052a
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3115: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3115: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000028, Data=e0fa6632, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3135: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000028, Data=6603052a, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3135: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000028, Expected = 6603052a, Got = 6603052a
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3145: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3145: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=1aff8fb1, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3165: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=1aff8fb1, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3165: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000000 with Data = 1aff8fb1
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3175: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3175: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000000, Data=95f6f0b9, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3195: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000000, Data=1aff8fb1, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3195: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000000, Expected = 1aff8fb1, Got = 1aff8fb1
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3205: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3205: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=47287949, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3225: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=47287949, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3225: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000030 with Data = 47287949
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3235: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3235: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=c21fda51, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3255: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=47287949, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3255: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000030, Expected = 47287949, Got = 47287949
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3265: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3265: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=ea7dc1f2, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3285: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=ea7dc1f2, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3285: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000038 with Data = ea7dc1f2
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3295: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3295: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=657522fa, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3315: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=ea7dc1f2, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3315: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000038, Expected = ea7dc1f2, Got = ea7dc1f2
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3325: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3325: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=04ff69ac, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3345: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=04ff69ac, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3345: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000001c with Data = 04ff69ac
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3355: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3355: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=7ff6cab4, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3375: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=04ff69ac, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3375: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000001c, Expected = 04ff69ac, Got = 04ff69ac
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3385: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3385: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=96ad7077, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3405: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=96ad7077, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3405: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000001c with Data = 96ad7077
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3415: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3415: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=11a4d17f, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3435: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=96ad7077, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3435: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000001c, Expected = 96ad7077, Got = 96ad7077
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3445: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3445: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=14bc2eac, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3465: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=14bc2eac, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3465: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000034 with Data = 14bc2eac
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3475: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3475: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=a88dc30f, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3495: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=14bc2eac, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3495: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000034, Expected = 14bc2eac, Got = 14bc2eac
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3505: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3505: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=1f8e9b40, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3525: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=1f8e9b40, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3525: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000024 with Data = 1f8e9b40
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3535: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3535: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=9a85fc48, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3555: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=1f8e9b40, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3555: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000024, Expected = 1f8e9b40, Got = 1f8e9b40
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3565: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3565: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=16c1bf3e, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3585: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=16c1bf3e, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3585: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000030 with Data = 16c1bf3e
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3595: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3595: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=91b92046, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3615: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=16c1bf3e, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3615: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000030, Expected = 16c1bf3e, Got = 16c1bf3e
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3625: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3625: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=8521424d, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3645: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=8521424d, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3645: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000018 with Data = 8521424d
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3655: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3655: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=0018a355, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3675: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=8521424d, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3675: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000018, Expected = 8521424d, Got = 8521424d
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3685: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3685: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=a3c1cbbe, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3705: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=a3c1cbbe, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3705: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000018 with Data = a3c1cbbe
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3715: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3715: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000018, Data=37936021, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3735: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000018, Data=a3c1cbbe, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3735: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000018, Expected = a3c1cbbe, Got = a3c1cbbe
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3745: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3745: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=c765659e, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3765: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=c765659e, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3765: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000030 with Data = c765659e
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3775: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3775: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=425cc6a6, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3795: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=c765659e, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3795: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000030, Expected = c765659e, Got = c765659e
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3805: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3805: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=9b4a05e0, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3825: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=9b4a05e0, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3825: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000024 with Data = 9b4a05e0
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3835: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3835: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000024, Data=164166e8, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3855: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000024, Data=9b4a05e0, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3855: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000024, Expected = 9b4a05e0, Got = 9b4a05e0
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3865: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3865: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=6f44640c, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3885: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=6f44640c, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3885: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000034 with Data = 6f44640c
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3895: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3895: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000034, Data=0315f86f, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3915: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000034, Data=6f44640c, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3915: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000034, Expected = 6f44640c, Got = 6f44640c
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3925: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3925: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=a8986397, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3945: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=a8986397, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 3945: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000001c with Data = a8986397
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 3955: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3955: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=238fc49f, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 3975: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=a8986397, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 3975: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000001c, Expected = a8986397, Got = a8986397
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 3985: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 3985: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=e202210c, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 4005: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=e202210c, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 4005: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 0000001c with Data = e202210c
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 4015: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 4015: uvm_test_top.env.agent.drv [DRV] Done: Addr=0000001c, Data=5cf98214, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 4035: uvm_test_top.env.agent.mon [MON] Observed: Addr=0000001c, Data=e202210c, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 4035: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 0000001c, Expected = e202210c, Got = e202210c
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 4045: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 4045: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=92983d92, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 4065: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=92983d92, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 4065: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000038 with Data = 92983d92
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 4075: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 4075: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000038, Data=0d8f9e9a, Write=0
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 4095: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000038, Data=92983d92, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 4095: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000038, Expected = 92983d92, Got = 92983d92
+# KERNEL: UVM_INFO /home/runner/driver.sv(54) @ 4105: uvm_test_top.env.agent.drv [WR] ------------WRITE HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 4105: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=ba5ab929, Write=1
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 4125: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=ba5ab929, Write=1, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(38) @ 4125: uvm_test_top.env.scb [SCB_WR] Predictor: Updated Addr = 00000030 with Data = ba5ab929
+# KERNEL: UVM_INFO /home/runner/driver.sv(56) @ 4135: uvm_test_top.env.agent.drv [RD] ------------READ HAPPENING-----------------
+# KERNEL: UVM_INFO /home/runner/driver.sv(58) @ 4135: uvm_test_top.env.agent.drv [DRV] Done: Addr=00000030, Data=3d6c9c2d, Write=0
+# KERNEL: UVM_INFO /home/runner/sequence1.sv(32) @ 4135: uvm_test_top.env.agent.sqr@@s1 [apb_write_read_seq] Sequence body finished
+# KERNEL: UVM_INFO /home/runner/monitor.sv(56) @ 4155: uvm_test_top.env.agent.mon [MON] Observed: Addr=00000030, Data=ba5ab929, Write=0, Err=0
+# KERNEL: UVM_INFO /home/runner/scoreboard.sv(46) @ 4155: uvm_test_top.env.scb [SCB_PASS] PASS: Read Addr = 00000030, Expected = ba5ab929, Got = ba5ab929
+# KERNEL: UVM_INFO /home/runner/test.sv(56) @ 4235: uvm_test_top [apb_test] Test finished!
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 4235: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 4235: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :  520
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [DRV]   120
+# KERNEL: [MASTER_SEQ]     5
+# KERNEL: [MON]   126
+# KERNEL: [MON_RST]     2
+# KERNEL: [RD]    57
+# KERNEL: [RNTST]     1
+# KERNEL: [SCB_PASS]    56
+# KERNEL: [SCB_RST]     1
+# KERNEL: [SCB_SLVERR]     2
+# KERNEL: [SCB_WR]    68
+# KERNEL: [SEQ]     6
+# KERNEL: [TEST]     3
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [WR]    63
+# KERNEL: [apb_memory_stress_seq]     1
+# KERNEL: [apb_test]     3
+# KERNEL: [apb_write_read_seq]     4
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 4235 ns,  Iteration: 57,  Instance: /tb_top,  Process: @INITIAL#60_1@.
+# KERNEL: stopped at time: 4235 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
