@@ -17,7 +17,7 @@ This repository contains a comprehensive **UVM-based verification environment** 
 
 ## Block Diagram
 
-![Asynchronous FIFO](./diagram/decoder.png)
+![Decoder 2:4](./diagram/decoder.png)
 
 ---
 
