@@ -1,18 +1,25 @@
-## Round Robin Arbiter UVM Verification Environment
+# Round Robin Arbiter Verification 
 
 ## Project Overview
 
 This repository contains the complete verification suite for a **4-channel Round Robin Arbiter**. Unlike static priority, this design ensures that no master is starved by rotating the priority after every successful grant. The RTL utilizes a **Mask Logic** approach to keep track of the last granted master and determine the next starting point for the priority search.
 
+---
+
 ## Design Specifications
 
 * **Channels:** 4 Request/Grant pairs.
-
 * **Fairness Policy:** Round Robin (Circular).
-
 * **Architecture:** Mask-based priority logic with immediate wraparound.
-
 * **Latency:** Single-cycle Grant generation.
+
+---
+
+## Block Diagram
+
+![Arbiter Round Robbin ](./diagram/arbiter_rr.png)
+
+---
 
 ## Round Robin Logic Table (Under Constant Load)
 
@@ -28,41 +35,24 @@ When all requests are active (`4'b1111`), the arbiter must follow this rotation:
 
 ---
 
-## Testbench Architecture
-
-The verification environment is built using a layered UVM approach to ensure reusability and modularity.
-
-## Key Components:
-
-* **UVM Agent:** Encapsulates the Sequencer, Driver, and Monitor.
-* **Driver:** Drives constrained-random stimulus into the virtual interface.
-* **Monitor:** Observes the interface signals and converts them into transaction objects.
-* **Scoreboard:** Implements the reference model to compare actual RTL output against expected results.
-* **Functional Coverage:** Tracks which input combinations and select transitions have been exercised.
----
-
-## Verification Features
-
-## 1. SystemVerilog Assertions (SVA)
+## SystemVerilog Assertions (SVA)
 
 This environment includes critical safety and fairness properties:
 
 * **Mutual Exclusion:** `$onehot0(gnt)` ensures the bus is never shared by two masters simultaneously.
-
 * **Stability Check:** `p_gnt_stable` ensures that once a grant is given, it remains valid as long as the request is active, preventing bus glitches.
-
 * **No Starvation:** `p_no_starvation` is the most important check here. It ensures that if `req[0]` is asserted, it **must** eventually receive a grant within a bounded time (10 cycles), proving the fairness of the Round Robin algorithm.
-
 * **Ghost Grant Prevention:** Checks that every grant issued was actually requested by a master in the previous cycle.
 
-## 2. Functional Coverage
+---
+
+## Functional Coverage
 
 * **Grant Rotation:** Tracks which masters received grants to ensure 100% "Fairness Coverage."
-
 * **Request/Grant Cross:** A cross between `cp_req` and `cp_gnt` to prove that the arbiter handled every possible request combination.
-
 * **Reset Recovery Cross:** Ensures the arbiter was reset while under heavy load (`4'b1111`).
 
+---
 
 ## Test Sequences & Stimulus Strategy
 
@@ -83,7 +73,13 @@ I designed these sequences to specifically test the "Round Robin" nature of the 
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV).
 
+---
 
+## Link to open the project
+
+🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/dijn)**
+
+---
 
 ## Technical Insight for Recruiters
 
