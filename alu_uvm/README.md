@@ -3,6 +3,7 @@
 ## Project Overview
 
 This repository contains a high-fidelity **UVM verification environment** for a **4-bit ALU**. The design supports 8 operations, including signed arithmetic, logical bitwise operations, and shifts. A major focus of this project was the verification of **Status Flags (C, Z, N, V)** and ensuring their correct behavior across different operational modes using **SystemVerilog Assertions (SVA)** and **Functional Coverage**.
+---
 
 ## Design Specifications
 
@@ -14,6 +15,7 @@ This repository contains a high-fidelity **UVM verification environment** for a 
 * **Zero (Z):** Asserted if the result is 4'b0000.
 * **Negative (N):** Reflects the sign bit (MSB) of the result.
 * **Overflow (V):** Asserted for signed arithmetic overflows (e.g., Pos + Pos = Neg).
+---
 
 ## Block Diagram
 
@@ -43,6 +45,7 @@ This repository contains a high-fidelity **UVM verification environment** for a 
 * **Carry (C):** $1$ if an addition results in a bit-5 carry or a subtraction requires a borrow.
 * **Overflow (V):** $1$ if the result exceeds the signed 4-bit range ($-8$ to $+7$).
 
+---
 
 ## SystemVerilog Assertions (SVA)
 
@@ -54,6 +57,7 @@ White-box assertions are bound to the RTL to verify timing-critical flag logic:
  * **Zero/Neg:** Verified using the `<->` (equivalence) operator against the result.
  * **Logic Cleanliness:** Asserts that `carry` and `ovfl` must be 0 during logical operations (AND, OR, etc.).
 
+---
 
 ## Functional Coverage
 
@@ -66,7 +70,7 @@ The alu_coverage subscriber ensures high-quality verification closure through:
 * **cross_math_ovfl:** Verifies that overflow was triggered specifically during ADD and SUB.
 * **cross_sub_neg:** Ensures negative results were specifically tested during subtraction.
 * **Illegal Bins:** Automatically flags if carry or ovfl are asserted during logical operations.
-
+---
 
 ## Test Sequences & Stimulus Strategy
 
@@ -87,10 +91,12 @@ The environment utilizes a dual-layered stimulus approach to ensure all arithmet
 * **Language:** SystemVerilog, UVM
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
+---
 
 ## Link to open the project
 
 🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/JUbm)**
+---
 
 ## Technical Insight for Recruiters
 
