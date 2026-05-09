@@ -1,8 +1,10 @@
-## 2-to-4 Decoder UVM Verification Environment
+# 2-to-4 Decoder UVM Verification Environment
 
 ## Project Overview
 
 This repository contains a comprehensive **UVM-based verification environment** for a **2-to-4 Decoder** with an Enable (`en`) signal. The project demonstrates advanced verification techniques, including **SystemVerilog Assertions (SVA)** bound to RTL, **X-propagation testing**, and transition coverage to ensure 100% functional integrity.
+
+---
 
 ## Design Specifications
 
@@ -10,6 +12,14 @@ This repository contains a comprehensive **UVM-based verification environment** 
 * **Select (sel):** 2-bit selection input to choose one of four output lines.
 * **Output (y):** 4-bit one-hot output vector.
 * **Error Handling:** The RTL is designed to propagate `X` values from the input `sel` to the output `y` when enabled, facilitating early bug detection in the SoC integration phase.
+
+---
+
+## Block Diagram
+
+![Asynchronous FIFO](./diagram/decoder.png)
+
+---
 
 ## Truth Table
 
@@ -54,6 +64,8 @@ The UVM Subscriber implements a detailed covergroup to track verification progre
 * **Cross Coverage:** The `cross` of `en` and `sel` confirms that every selection was tested in both enabled and disabled states.
 * **Illegal Bins:** Defined for `multi_bit` high scenarios to automatically flag non-one-hot behavior in the coverage report.
 
+---
+
 ## Test Sequences & Stimulus Strategy
 
 The environment utilizes specialized sequences to stress-test the combinational logic and control signals:
@@ -75,7 +87,13 @@ The environment utilizes specialized sequences to stress-test the combinational 
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
 
+---
 
+## Link to open the Project
+
+🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/dNFC)**
+
+---
 
 ## Technical Insight for Recruiters
 
