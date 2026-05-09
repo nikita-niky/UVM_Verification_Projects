@@ -4,12 +4,22 @@
 
 This repository features a **UVM-based verification environment** for a **32-bit 1:4 Demultiplexer**. This project demonstrates the ability to verify data routing logic where a single input is directed to one of four outputs based on a select signal.
 
+---
+
 ## Design Specifications
 
 * **Data Width:** 32-bit ($[31:0]$)
 * **Input:** Single 32-bit data input (`d`) and a 2-bit select line (`sel`).
 * **Outputs:** Four 32-bit outputs (`y0`, `y1`, `y2`, `y3`).
 * **Logic:** The selected output reflects `d`, while non-selected outputs remain at `0` (or a default state).
+
+---
+
+## Block Diagram
+
+![De-Multiplexer 1:4](./diagram/demux.png)
+
+---
 
 ### Truth Table
 
@@ -33,11 +43,10 @@ The verification environment is built using a layered UVM approach to ensure reu
 * **Monitor:** Observes the interface signals and converts them into transaction objects.
 * **Scoreboard:** Implements the reference model to compare actual RTL output against expected results.
 * **Functional Coverage:** Tracks which input combinations and select transitions have been exercised.
+
 ---
 
-## Verification Features
-
-### 1. Constrained Random Stimulus
+## Constrained Random Stimulus
 
 Used SystemVerilog constraints and distribution weights to ensure robust verification of the data routing paths:
 
@@ -45,7 +54,9 @@ Used SystemVerilog constraints and distribution weights to ensure robust verific
 * **Extreme Values:** Injected `0x00000000` and `0xFFFFFFFF` across different ports to verify the 32-bit bus integrity.
 * **Toggle Patterns:** Implemented walking 1s and alternating patterns (`55/AA`) to verify that every bit in every output port toggles correctly.
 
-### 2. Assertions (SVA)
+---
+
+## System Verilog Assertions (SVA)
 
 Implemented SystemVerilog Assertions to verify the structural and protocol-level behavior of the Demux:
 
@@ -54,13 +65,17 @@ Implemented SystemVerilog Assertions to verify the structural and protocol-level
 * **Stability Checks:** Monitors the `sel` and `d` lines to ensure no `X or Z` values are propagated during active simulation.
 * **Reset Integrity:** A dedicated check to ensure all outputs are immediately cleared when `rst_n` is asserted.
 
-## 3. Functional Coverage
+---
+
+## Functional Coverage
 
 Defined a comprehensive covergroup to ensure **100% coverage** of the distribution logic:
 
 * **Select Line Bins:** Verified that all four output paths were activated.
 * **Select Transitions:** Tracked the movement between ports (e.g., $0 \rightarrow 3, 2 \rightarrow 1$) to ensure the routing logic handles rapid select changes.
 * **Cross Coverage:** Verified the intersection of data patterns (All ones, All zeros) with each of the four select combinations.
+
+---
 
 ## Test Sequences & Stimulus Strategy
 
@@ -81,3 +96,10 @@ To achieve high functional and toggle coverage for the data distribution paths, 
 * **Language:** SystemVerilog, UVM
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
+
+---
+
+## Link to open the Project
+
+🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/DYt2)**
+
