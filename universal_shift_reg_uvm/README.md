@@ -8,7 +8,8 @@ This repository contains a robust **UVM verification environment** for a **4-bit
 
 ## Design Specifications
 
-**Word Size:** 4-bit Data.
+* **Word Size:** 4-bit Data.
+
 **Operating Modes (`mode`):**
 * `00`: Hold (Maintain current state).
 * `01`: Shift Right (Serial data enters at MSB).
