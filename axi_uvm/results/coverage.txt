@@ -1,0 +1,156 @@
+# acdb save;
+# acdb report -db fcover.acdb -txt -o cov.txt -verbose;
+# # ACDB: Coverage report "cov.txt" was generated successfully.
+# exec cat cov.txt;
+# # +++++++++++++++++++++++++++++++++++++++++++++
+# # ++++++++++       REPORT INFO       ++++++++++
+# # +++++++++++++++++++++++++++++++++++++++++++++
+# # 
+# # 
+# # SUMMARY
+# # ===============================================
+# # |     Property     |          Value           |
+# # ===============================================
+# # | User             | runner                   |
+# # | Host             | e46d0e911956             |
+# # | Tool             | Riviera-PRO 2025.04      |
+# # | Report file      | /home/runner/cov.txt     |
+# # | Report date      | 2026-05-21 01:11         |
+# # | Report arguments | -verbose                 |
+# # | Input file       | /home/runner/fcover.acdb |
+# # | Input file date  | 2026-05-21 01:11         |
+# # | Number of tests  | 1                        |
+# # ===============================================
+# # 
+# # 
+# # TEST DETAILS
+# # ==============================================
+# # | Property |              Value              |
+# # ==============================================
+# # | Test     | fcover.acdb:fcover              |
+# # | Status   | Fatal                           |
+# # | Args     | asim +access+r                  |
+# # | Simtime  | 110315 ns                       |
+# # | Cputime  | 9.477 s                         |
+# # | Seed     | 1                               |
+# # | Date     | 2026-05-21 01:11                |
+# # | User     | runner                          |
+# # | Host     | e46d0e911956                    |
+# # | Host os  | Linux64                         |
+# # | Tool     | Riviera-PRO 2025.04 (simulator) |
+# # ==============================================
+# # 
+# # 
+# # +++++++++++++++++++++++++++++++++++++++++++++
+# # ++++++++++     DESIGN HIERARCHY    ++++++++++
+# # +++++++++++++++++++++++++++++++++++++++++++++
+# # 
+# # 
+# # CUMULATIVE SUMMARY
+# # =============================================
+# # |    Coverage Type    | Weight | Hits/Total |
+# # =============================================
+# # | Covergroup Coverage |      1 |   100.000% |
+# # |---------------------|--------|------------|
+# # | Types               |        |      1 / 1 |
+# # =============================================
+# # CUMULATIVE INSTANCE-BASED COVERAGE: 100.000%
+# # COVERED INSTANCES: 1 / 1
+# # FILES: 1
+# # 
+# # 
+# # CLASS - /\package axi_pkg\/axi_coverage : work.axi_pkg/\axi_pkg axi_coverage \
+# # 
+# # 
+# #     SUMMARY
+# #     =============================================
+# #     |    Coverage Type    | Weight | Hits/Total |
+# #     =============================================
+# #     | Covergroup Coverage |      1 |   100.000% |
+# #     |---------------------|--------|------------|
+# #     | Types               |        |      1 / 1 |
+# #     =============================================
+# #     WEIGHTED AVERAGE LOCAL: 100.000%
+# # 
+# # 
+# #     COVERGROUP COVERAGE
+# #     ================================================================================
+# #     |                 Covergroup                  |   Hits   |  Goal /  |  Status  |
+# #     |                                             |          | At Least |          |
+# #     ================================================================================
+# #     | TYPE /\package axi_pkg\/axi_coverage/axi_cg | 100.000% | 100.000% | Covered  |
+# #     ================================================================================
+# #     | INSTANCE <UNNAMED1>                         | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_op                | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin WRITE_OP                                |      513 |        1 | Covered  |
+# #     | bin READ_OP                                 |      512 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_id                | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin low_ids                                 |       28 |        1 | Covered  |
+# #     | bin med_ids                                 |       41 |        1 | Covered  |
+# #     | bin high_ids                                |       23 |        1 | Covered  |
+# #     | bin error_id                                |       10 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_len               | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin single_beat                             |       60 |        1 | Covered  |
+# #     | bin short_burst                             |      209 |        1 | Covered  |
+# #     | bin long_burst                              |      756 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_size              | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin size_1_byte                             |      566 |        1 | Covered  |
+# #     | bin size_2_bytes                            |      280 |        1 | Covered  |
+# #     | bin size_4_bytes                            |      179 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_burst_type        | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin FIXED_BURST                             |      462 |        1 | Covered  |
+# #     | bin INCR_BURST                              |      477 |        1 | Covered  |
+# #     | bin WRAP_BURST                              |       86 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_unaligned_offset  | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin ALIGNED                                 |      455 |        1 | Covered  |
+# #     | bin OFFSET_1B                               |      132 |        1 | Covered  |
+# #     | bin OFFSET_2B                               |      274 |        1 | Covered  |
+# #     | bin OFFSET_3B                               |      164 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | COVERPOINT <UNNAMED1>::cp_resp_status       | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin OKAY_RESP                               |     1023 |        1 | Covered  |
+# #     | bin DECERR_RESP                             |        2 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | CROSS <UNNAMED1>::cross_burst_x_len         | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin <FIXED_BURST,single_beat>               |        6 |        1 | Covered  |
+# #     | bin <FIXED_BURST,short_burst>               |       96 |        1 | Covered  |
+# #     | bin <FIXED_BURST,long_burst>                |      360 |        1 | Covered  |
+# #     | bin <INCR_BURST,single_beat>                |       54 |        1 | Covered  |
+# #     | bin <INCR_BURST,short_burst>                |       67 |        1 | Covered  |
+# #     | bin <INCR_BURST,long_burst>                 |      356 |        1 | Covered  |
+# #     | bin <WRAP_BURST,short_burst>                |       46 |        1 | Covered  |
+# #     | bin <WRAP_BURST,long_burst>                 |       40 |        1 | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | CROSS <UNNAMED1>::cross_id_x_len            | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin <low_ids,short_burst>                   |        6 |        1 | Covered  |
+# #     | bin <low_ids,long_burst>                    |       22 |        1 | Covered  |
+# #     | bin <med_ids,single_beat>                   |        4 |        1 | Covered  |
+# #     | bin <med_ids,short_burst>                   |       11 |        1 | Covered  |
+# #     | bin <med_ids,long_burst>                    |       26 |        1 | Covered  |
+# #     | bin <high_ids,single_beat>                  |        2 |        1 | Covered  |
+# #     | bin <high_ids,short_burst>                  |       11 |        1 | Covered  |
+# #     | bin <high_ids,long_burst>                   |       10 |        1 | Covered  |
+# #     | ignore bin error                            |       10 |    -     | Occurred |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | CROSS <UNNAMED1>::cross_op_x_resp           | 100.000% | 100.000% | Covered  |
+# #     |---------------------------------------------|----------|----------|----------|
+# #     | bin <WRITE_OP,OKAY_RESP>                    |      512 |        1 | Covered  |
+# #     | bin <WRITE_OP,DECERR_RESP>                  |        1 |        1 | Covered  |
+# #     | bin <READ_OP,OKAY_RESP>                     |      511 |        1 | Covered  |
+# #     | bin <READ_OP,DECERR_RESP>                   |        1 |        1 | Covered  |
+# #     ================================================================================
