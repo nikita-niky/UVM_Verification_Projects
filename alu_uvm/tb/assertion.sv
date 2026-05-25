@@ -1,3 +1,9 @@
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================
+
 module alu_assertion(
   input logic clk,
   input logic rst,
@@ -121,3 +127,10 @@ module alu_assertion(
     
   
 endmodule
+
+
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================

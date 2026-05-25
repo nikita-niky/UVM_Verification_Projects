@@ -1,3 +1,9 @@
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================
+
 class alu_scoreboard extends uvm_scoreboard;
   `uvm_component_utils(alu_scoreboard)
   alu_item tr;
@@ -89,3 +95,10 @@ class alu_scoreboard extends uvm_scoreboard;
     `uvm_info(get_type_name(), $sformatf("Tests Passed: %0d, Failed: %0d", pass_count, fail_count), UVM_LOW)
   endfunction
 endclass
+
+
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================

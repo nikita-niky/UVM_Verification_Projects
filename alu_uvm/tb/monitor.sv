@@ -1,3 +1,9 @@
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================
+
 class alu_monitor extends uvm_monitor;
   `uvm_component_utils(alu_monitor)
 
@@ -51,3 +57,9 @@ class alu_monitor extends uvm_monitor;
     end
   endtask
 endclass
+
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================

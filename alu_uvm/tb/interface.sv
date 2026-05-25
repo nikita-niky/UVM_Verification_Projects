@@ -1,3 +1,9 @@
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================
+
 interface alu_if(input logic clk);
   logic       rst;
   logic [3:0] a;
@@ -25,3 +31,8 @@ interface alu_if(input logic clk);
   
 
 endinterface
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================

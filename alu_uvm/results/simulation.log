@@ -1,3 +1,9 @@
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================
+
 vsim +access+r;
 # ELBREAD: Elaboration process.
 # ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
@@ -1909,3 +1915,10 @@ exec cat simulation.log;
 # # KERNEL: Time: 3305 ns,  Iteration: 57,  Instance: /tb_top,  Process: @INITIAL#38_2@.
 # # KERNEL: stopped at time: 3305 ns
 # # VSIM: Simulation has finished. There are no more test vectors to simulate.
+
+
+// ==========================================================================
+// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+// Copyright:   (c) 2026 Nikita Agrawal
+// License:     MIT License (see LICENSE file in root)
+// ==========================================================================
