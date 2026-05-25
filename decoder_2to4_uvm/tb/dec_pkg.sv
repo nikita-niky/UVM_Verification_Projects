@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 package dec_pkg;
     import uvm_pkg::*;
     `include "uvm_macros.svh"
@@ -28,3 +34,6 @@ package dec_pkg;
     `include "test.sv"
 
 endpackage
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

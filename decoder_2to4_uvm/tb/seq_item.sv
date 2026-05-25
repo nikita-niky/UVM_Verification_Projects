@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class dec_item extends uvm_sequence_item;
   `uvm_object_utils(dec_item)
   
@@ -18,3 +24,6 @@ class dec_item extends uvm_sequence_item;
   constraint con_sel {sel inside {[0:3]};}
   
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module dec_2to4 (
     input  logic [1:0] sel,
     input  logic       en,
@@ -26,3 +32,6 @@ bind dec_2to4 dec_assertion assert_inst(
   .en(en),
   .y(y)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

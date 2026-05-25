@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class dec_base_sequence extends uvm_sequence #(dec_item);
   `uvm_object_utils(dec_base_sequence)
   dec_item tr;
@@ -27,3 +33,6 @@ class dec_base_sequence extends uvm_sequence #(dec_item);
   endtask
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
