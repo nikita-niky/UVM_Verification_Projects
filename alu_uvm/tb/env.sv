@@ -1,8 +1,14 @@
-// ==========================================================================
-// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
-// Copyright:   (c) 2026 Nikita Agrawal
-// License:     MIT License (see LICENSE file in root)
-// ==========================================================================
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 
 class alu_env extends uvm_env;
   `uvm_component_utils(alu_env)
@@ -29,9 +35,9 @@ class alu_env extends uvm_env;
   endfunction
 
 endclass
-
-// ==========================================================================
-// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
-// Copyright:   (c) 2026 Nikita Agrawal
-// License:     MIT License (see LICENSE file in root)
-// ==========================================================================
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

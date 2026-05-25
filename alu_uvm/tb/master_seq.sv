@@ -1,8 +1,14 @@
-// ==========================================================================
-// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
-// Copyright:   (c) 2026 Nikita Agrawal
-// License:     MIT License (see LICENSE file in root)
-// ==========================================================================
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 
 class alu_master_seq extends uvm_sequence#(alu_item);
    `uvm_object_utils(alu_master_seq)
@@ -34,9 +40,9 @@ class alu_master_seq extends uvm_sequence#(alu_item);
 
    endtask
 endclass
-
-// ==========================================================================
-// Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
-// Copyright:   (c) 2026 Nikita Agrawal
-// License:     MIT License (see LICENSE file in root)
-// ==========================================================================
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
