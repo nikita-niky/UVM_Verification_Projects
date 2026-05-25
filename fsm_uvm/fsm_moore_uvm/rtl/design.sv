@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module fsm_moore (
     input  logic clk,
     input  logic rst_n,
@@ -48,3 +54,6 @@ bind fsm_moore fsm_assertion chk(
   .pattern_found(pattern_found),
   .current_state(dut.current_state)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

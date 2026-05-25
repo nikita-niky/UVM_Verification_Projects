@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class fsm_reset_seq extends uvm_sequence#(fsm_item);
     `uvm_object_utils(fsm_reset_seq)
 
@@ -26,3 +32,6 @@ class fsm_reset_seq extends uvm_sequence#(fsm_item);
     endtask
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

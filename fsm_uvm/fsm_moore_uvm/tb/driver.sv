@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class fsm_driver extends uvm_driver #(fsm_item);
   `uvm_component_utils(fsm_driver)
   fsm_item tr;
@@ -47,3 +53,7 @@ class fsm_driver extends uvm_driver #(fsm_item);
     `uvm_info("DRV", $sformatf("Driving rst_n = %0b | bit_in = %b", tr.rst_n, tr.bit_in), UVM_LOW)
   endtask
 endclass
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

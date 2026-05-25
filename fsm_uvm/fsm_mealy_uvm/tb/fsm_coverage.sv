@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class fsm_coverage extends uvm_subscriber#(fsm_item);
     `uvm_component_utils(fsm_coverage)
     fsm_item tr;
@@ -84,3 +90,7 @@ class fsm_coverage extends uvm_subscriber#(fsm_item);
 
 endclass
 
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

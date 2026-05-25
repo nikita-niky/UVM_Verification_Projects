@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 package fsm_enum;
   typedef enum logic [2:0] {
     IDLE  = 3'b000,
@@ -37,3 +43,6 @@ package fsm_pkg;
 
     `include "test.sv"
 endpackage
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
