@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class apb_reset_chk_seq extends apb_base_seq;
   `uvm_object_utils(apb_reset_chk_seq)
   
@@ -23,3 +29,6 @@ class apb_reset_chk_seq extends apb_base_seq;
     
   endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

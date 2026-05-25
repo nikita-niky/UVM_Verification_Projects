@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 class apb_driver extends uvm_driver #(apb_item);
   `uvm_component_utils(apb_driver)
   apb_item tr;
@@ -60,3 +65,6 @@ class apb_driver extends uvm_driver #(apb_item);
     
   endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

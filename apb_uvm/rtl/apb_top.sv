@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 `include "apb_master.sv"
 `include "apb_slave.sv"
 
@@ -29,3 +35,6 @@ module apb_system_top #(parameter ADDR_SIZE = 32,
   );
 
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

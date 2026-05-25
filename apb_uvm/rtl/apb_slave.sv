@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 module apb_slave #(parameter ADDR_SIZE = 32,
                    parameter DATA_SIZE = 32)
   (
@@ -81,3 +86,7 @@ bind apb_slave apb_slave_sva chk_slave(
   .PREADY(PREADY),
   .PSLVERR(PSLVERR)
 );
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

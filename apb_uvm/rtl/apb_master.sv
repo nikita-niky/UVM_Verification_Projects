@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module apb_master #(parameter ADDR_SIZE = 32,
                     parameter DATA_SIZE = 32)(
   
@@ -91,3 +97,7 @@ bind apb_master apb_master_sva ckh_master(
   .PRDATA(PRDATA),                   
   .PREADY(PREADY)
 );
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

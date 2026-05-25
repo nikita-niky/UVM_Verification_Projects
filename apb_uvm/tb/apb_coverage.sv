@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 class apb_coverage extends uvm_subscriber#(apb_item);
     `uvm_component_utils(apb_coverage)
     apb_item tr;
@@ -44,4 +49,7 @@ class apb_coverage extends uvm_subscriber#(apb_item);
     endfunction
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
 

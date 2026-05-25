@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 class apb_agent extends uvm_agent;
   `uvm_component_utils(apb_agent)
 
@@ -29,3 +34,6 @@ class apb_agent extends uvm_agent;
   endfunction
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 module apb_master_sva(
   input  logic        PCLK,
   input  logic        PRESETn,
@@ -134,3 +139,6 @@ assert_slave_finish: assert property (p_slave_finish)
   
   
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

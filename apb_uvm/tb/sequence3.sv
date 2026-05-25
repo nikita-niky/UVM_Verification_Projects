@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class apb_error_injection_seq extends  uvm_sequence #(apb_item);
   `uvm_object_utils(apb_error_injection_seq)
   apb_item tr;
@@ -18,3 +24,6 @@ class apb_error_injection_seq extends  uvm_sequence #(apb_item);
     
   endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

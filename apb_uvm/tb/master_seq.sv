@@ -1,3 +1,8 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
 class apb_master_seq extends uvm_sequence#(apb_item);
    `uvm_object_utils(apb_master_seq)
 
@@ -48,3 +53,6 @@ class apb_master_seq extends uvm_sequence#(apb_item);
 
    endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

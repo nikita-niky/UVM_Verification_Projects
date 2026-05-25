@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class apb_write_read_seq extends uvm_sequence #(apb_item);
   `uvm_object_utils(apb_write_read_seq)
   apb_item w_tr;
@@ -33,3 +39,6 @@ class apb_write_read_seq extends uvm_sequence #(apb_item);
   endtask
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
