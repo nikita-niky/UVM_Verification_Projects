@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class axi_master_seq extends uvm_sequence#(axi_item);
    `uvm_object_utils(axi_master_seq)
 
@@ -70,3 +76,6 @@ class axi_master_seq extends uvm_sequence#(axi_item);
             
    endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

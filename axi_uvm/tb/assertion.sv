@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module axi_assertions #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 16,
@@ -173,3 +179,7 @@ module axi_assertions #(
         else $error("AXI_SVA_WSTRB_BOUNDS: WSTRB asserts bits out of bus parameter dimensions! @ %0t", $time);
 
 endmodule
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

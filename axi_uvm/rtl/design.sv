@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module axi_slave #(
   parameter DATA_WIDTH = 32,
   parameter ADDR_WIDTH = 16,
@@ -330,3 +336,7 @@ bind axi_slave axi_assertions checker_inst (
   .rready(rready)
 );
 
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

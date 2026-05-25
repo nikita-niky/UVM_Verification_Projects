@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class axi_scoreboard extends uvm_scoreboard;
   `uvm_component_utils(axi_scoreboard)
 
@@ -130,3 +136,7 @@ class axi_scoreboard extends uvm_scoreboard;
     `uvm_info("SCB_SUMMARY", $sformatf("\n==========================================\n AXI IN-ORDER SCOREBOARD REPORT\n==========================================\n Data Beats Passed   : %0d\n Data Beats Failed   : %0d\n Protocol Resps OK   : %0d\n Protocol Resps Err  : %0d\n==========================================", pass_count, fail_count, resp_pass_count, resp_fail_count), UVM_LOW)
   endfunction
 endclass
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

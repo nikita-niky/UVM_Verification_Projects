@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class axi_coverage extends uvm_subscriber#(axi_item);
   `uvm_component_utils(axi_coverage)
   axi_item tr;
@@ -76,3 +82,7 @@ class axi_coverage extends uvm_subscriber#(axi_item);
 
 endclass
 
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

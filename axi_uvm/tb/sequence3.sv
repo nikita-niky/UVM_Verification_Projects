@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class axi_error_injection_seq extends uvm_sequence #(axi_item);
   `uvm_object_utils(axi_error_injection_seq)
 
@@ -61,3 +67,7 @@ class axi_error_injection_seq extends uvm_sequence #(axi_item);
     `uvm_info("SEQ_ERR_INJ", "=============================================", UVM_LOW)
   endtask
 endclass
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
