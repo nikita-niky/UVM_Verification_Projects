@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class fifo_directed_sequence extends uvm_sequence #(fifo_item);
   `uvm_object_utils(fifo_directed_sequence)
   fifo_item tr;
@@ -38,3 +44,6 @@ class fifo_directed_sequence extends uvm_sequence #(fifo_item);
   endtask
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

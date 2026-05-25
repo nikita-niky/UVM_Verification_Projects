@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module sync_fifo #(
     parameter DEPTH = 16,
     parameter DATA_WIDTH = 8
@@ -73,3 +79,6 @@ bind sync_fifo fifo_assertion chk(
   .full(full),
   .empty(empty)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
