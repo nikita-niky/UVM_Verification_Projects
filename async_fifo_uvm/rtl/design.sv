@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 `include "sync_ptr.sv"
 `include "wptr_full.sv"
 `include "rptr_empty.sv"
@@ -55,3 +61,7 @@ endmodule
   // Bind Memory
   bind fifo_mem fifo_mem_sva #(ADDR_SIZE, DATA_SIZE) u_mem_sva (.*);
 
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

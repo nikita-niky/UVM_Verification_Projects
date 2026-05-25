@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module fifo_mem #(
     parameter ADDR_SIZE = 4,
     parameter DATA_SIZE = 8
@@ -26,3 +32,6 @@ module fifo_mem #(
           mem[waddr] <= wdata;
     end
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

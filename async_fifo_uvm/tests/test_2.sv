@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class fifo_random_test extends uvm_test;
   `uvm_component_utils(fifo_random_test)
   virtual fifo_if vif;
@@ -46,3 +52,6 @@ class fifo_random_test extends uvm_test;
     phase.drop_objection(this);
   endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

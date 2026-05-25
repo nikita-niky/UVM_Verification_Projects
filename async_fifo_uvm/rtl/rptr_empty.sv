@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module rptr_empty #(parameter ADDR_SIZE = 4) (
   input  logic                 rclk, rrst_n, rinc,
   input  logic [ADDR_SIZE:0]   rq2_wptr,
@@ -30,3 +36,6 @@ module rptr_empty #(parameter ADDR_SIZE = 4) (
       rempty <= rempty_val;
   end
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

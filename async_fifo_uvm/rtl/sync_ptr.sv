@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module sync_ptr #(parameter ADDR_SIZE = 4) (
     input  logic [ADDR_SIZE:0] ptr_in,
     input  logic               clk, rst_n,
@@ -13,3 +19,6 @@ module sync_ptr #(parameter ADDR_SIZE = 4) (
         end
     end
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

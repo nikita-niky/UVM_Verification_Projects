@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module wptr_full #(parameter ADDR_SIZE = 4) (
   input  logic                 wclk, wrst_n, winc,
   input  logic [ADDR_SIZE:0]   wq2_rptr, 
@@ -35,3 +41,6 @@ module wptr_full #(parameter ADDR_SIZE = 4) (
       wfull <= wfull_val;
   end
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

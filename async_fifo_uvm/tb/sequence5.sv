@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class fifo_reset_op_seq extends uvm_sequence#(fifo_item);
   `uvm_object_utils(fifo_reset_op_seq)
   fifo_item tr;
@@ -57,3 +63,6 @@ class fifo_reset_op_seq extends uvm_sequence#(fifo_item);
          end
     endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

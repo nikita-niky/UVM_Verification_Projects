@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 interface fifo_if (input logic wclk, input logic rclk);
 
   parameter DATA_SIZE = 8;
@@ -51,3 +57,6 @@ interface fifo_if (input logic wclk, input logic rclk);
     modport R_MON (clocking mon_rd_cb, input rclk );
    
 endinterface
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

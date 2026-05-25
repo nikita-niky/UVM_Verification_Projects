@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 package fifo_params_pkg;
   parameter ADDR_SIZE = 4;
   parameter DATA_SIZE = 8;
@@ -48,3 +54,7 @@ package fifo_pkg;
 	`include "test_5.sv"
 	`include "test_6.sv"
 endpackage
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
