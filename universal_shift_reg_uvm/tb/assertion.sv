@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module univ_sr_assertion(
   input logic clk,
   input logic rst,
@@ -46,3 +52,6 @@ module univ_sr_assertion(
     else $error("Shift left function Failed!!");   
 
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

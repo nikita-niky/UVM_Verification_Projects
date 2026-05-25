@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class univ_sr_sequencer extends uvm_sequencer #(sr_item);
   `uvm_component_utils(univ_sr_sequencer)
 
@@ -6,3 +12,6 @@ class univ_sr_sequencer extends uvm_sequencer #(sr_item);
   endfunction
   
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

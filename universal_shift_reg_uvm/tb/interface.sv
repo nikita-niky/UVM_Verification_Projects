@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 interface sr_if(input logic clk);
   logic rst;
   logic [1:0] mode;
@@ -22,3 +28,6 @@ interface sr_if(input logic clk);
   modport MON (clocking mon_cb, input clk);
     
 endinterface
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

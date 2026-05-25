@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class univ_sr_directed_sequence extends uvm_sequence #(sr_item);
   `uvm_object_utils(univ_sr_directed_sequence)
   sr_item tr;
@@ -52,3 +58,6 @@ class univ_sr_directed_sequence extends uvm_sequence #(sr_item);
   endtask
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

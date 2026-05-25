@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class univ_sr_monitor extends uvm_monitor;
   `uvm_component_utils(univ_sr_monitor)
 
@@ -59,3 +65,6 @@ class univ_sr_monitor extends uvm_monitor;
 
   endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

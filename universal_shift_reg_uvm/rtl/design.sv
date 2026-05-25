@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module univ_sr (
     input  logic       clk,
     input  logic       rst,      // Synchronous Reset
@@ -34,3 +40,6 @@ bind univ_sr univ_sr_assertion check_inst(
   .d_in(d_in),
   .q_out(q_out)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
