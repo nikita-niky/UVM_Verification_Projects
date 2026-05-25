@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module mux_4to1 (
   input  logic [31:0] d [3:0],
   input  logic [1:0]  sel,
@@ -14,3 +20,6 @@ bind mux_4to1 mux_assertions assert_inst (
     .sel(sel),
     .y(y)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

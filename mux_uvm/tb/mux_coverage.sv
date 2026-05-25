@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class mux_coverage extends uvm_subscriber #(mux_transaction);
     `uvm_component_utils(mux_coverage)
     mux_transaction tr;
@@ -61,3 +67,6 @@ class mux_coverage extends uvm_subscriber #(mux_transaction);
     endfunction
   
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

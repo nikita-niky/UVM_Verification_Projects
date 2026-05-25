@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class mux_master_seq extends uvm_sequence #(mux_transaction);
   `uvm_object_utils(mux_master_seq)
   
@@ -40,3 +46,6 @@ class mux_master_seq extends uvm_sequence #(mux_transaction);
           
         endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

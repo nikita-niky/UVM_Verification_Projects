@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class mux_agent extends uvm_agent;
     `uvm_component_utils(mux_agent)
     mux_driver drv;
@@ -20,3 +26,6 @@ class mux_agent extends uvm_agent;
     endfunction
   
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

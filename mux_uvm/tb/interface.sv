@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 interface mux_if(input logic clk);
   logic [31:0] d [3:0];
   logic [1:0] sel;
@@ -11,3 +17,6 @@ interface mux_if(input logic clk);
   modport MON (clocking cb, input clk,d,sel,y);
   
 endinterface
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

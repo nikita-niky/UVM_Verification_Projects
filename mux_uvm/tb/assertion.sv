@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module mux_assertions (
     input  logic        clk,
     input  logic [31:0] d [3:0],
@@ -37,3 +43,6 @@ module mux_assertions (
     cp_sel_3: cover property (@(posedge clk) sel == 2'b11);
 
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

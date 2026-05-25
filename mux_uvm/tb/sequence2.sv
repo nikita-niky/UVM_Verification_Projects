@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class mux_all_ones_seq extends uvm_sequence #(mux_transaction);
   mux_transaction tr;
   
@@ -25,3 +31,6 @@ class mux_all_ones_seq extends uvm_sequence #(mux_transaction);
         
     endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
