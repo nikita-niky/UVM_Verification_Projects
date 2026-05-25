@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class p_enc_master_seq extends uvm_sequence#(enc_item);
    `uvm_object_utils(p_enc_master_seq)
 
@@ -32,3 +38,6 @@ class p_enc_master_seq extends uvm_sequence#(enc_item);
             
    endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

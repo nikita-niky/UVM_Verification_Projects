@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module p_enc (
   input logic[3:0] req,
   output logic [1:0] code,
@@ -33,3 +39,7 @@ bind p_enc p_enc_assertion assert_inst(
   .code(code),
   .valid(valid)
 );
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
