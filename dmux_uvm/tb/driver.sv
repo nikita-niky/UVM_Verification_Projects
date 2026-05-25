@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class demux_driver extends uvm_driver#(demux_item);
   `uvm_component_utils(demux_driver)
   demux_item tr;
@@ -35,3 +41,6 @@ class demux_driver extends uvm_driver#(demux_item);
         end
     endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

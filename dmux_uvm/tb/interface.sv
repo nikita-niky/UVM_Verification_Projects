@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 interface demux_if(input logic clk);
   logic rst_n;
   logic [31:0] d;
@@ -14,3 +20,6 @@ interface demux_if(input logic clk);
     modport MON (clocking cb, input clk,d, sel, y, rst_n);
   
 endinterface
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

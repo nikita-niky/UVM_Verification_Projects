@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module demux_assertion(
   input logic [31:0] d,
   input logic [1:0]  sel,
@@ -61,3 +67,6 @@ module demux_assertion(
        $error("SVA", "Reset failed: Outputs not zero!");
 
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

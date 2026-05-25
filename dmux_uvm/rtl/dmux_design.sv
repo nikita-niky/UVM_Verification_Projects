@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module demux_1to4 (
   input  logic [31:0] d,
   input  logic [1:0]  sel,
@@ -24,3 +30,6 @@ bind demux_1to4 demux_assertion check_inst (
     .rst_n(rst_n),
     .y(y)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
