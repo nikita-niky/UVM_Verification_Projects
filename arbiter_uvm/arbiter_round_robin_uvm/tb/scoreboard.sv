@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class arb_scoreboard extends uvm_scoreboard;
   `uvm_component_utils(arb_scoreboard)
   arb_item tr;
@@ -73,3 +79,6 @@ class arb_scoreboard extends uvm_scoreboard;
 
   
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

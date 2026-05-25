@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module arbiter_assertion(
   input logic clk,
   input logic rst_n,
@@ -60,3 +66,6 @@ module arbiter_assertion(
   
 
 endmodule
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

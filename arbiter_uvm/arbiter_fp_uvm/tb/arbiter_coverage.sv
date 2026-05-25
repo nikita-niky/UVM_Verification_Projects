@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class arbiter_coverage extends uvm_subscriber#(arbiter_item);
     `uvm_component_utils(arbiter_coverage)
     arbiter_item tr;
@@ -45,3 +51,7 @@ class arbiter_coverage extends uvm_subscriber#(arbiter_item);
 
 endclass
 
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

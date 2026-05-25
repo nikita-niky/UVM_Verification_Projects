@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class arb_coverage extends uvm_subscriber#(arb_item);
     `uvm_component_utils(arb_coverage)
     arb_item tr;
@@ -57,3 +63,7 @@ endclass
 //         bins gnt_[] = {0,1,2,4,8};
 //         illegal_bins other = default; 
 
+
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

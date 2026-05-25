@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class arb_random_sequence extends uvm_sequence #(arb_item);
   `uvm_object_utils(arb_random_sequence)
   arb_item tr;
@@ -33,3 +39,6 @@ endclass
 //       finish_item(tr);
           
 //     end
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

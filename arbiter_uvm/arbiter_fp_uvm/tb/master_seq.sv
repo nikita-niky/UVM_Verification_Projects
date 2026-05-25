@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class arbiter_master_seq extends uvm_sequence#(arbiter_item);
   `uvm_object_utils(arbiter_master_seq)
 
@@ -41,3 +47,6 @@ class arbiter_master_seq extends uvm_sequence#(arbiter_item);
 
   endtask
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

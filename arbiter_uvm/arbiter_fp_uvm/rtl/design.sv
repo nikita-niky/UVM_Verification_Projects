@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 module fixed_arbiter (
     input  logic       clk,
     input  logic       rst_n,
@@ -26,3 +32,6 @@ bind fixed_arbiter arbiter_assertion chk(
   .req(req),
   .gnt(gnt)
 );
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */

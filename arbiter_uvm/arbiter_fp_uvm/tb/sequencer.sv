@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class arbiter_sequencer extends uvm_sequencer #(arbiter_item);
   `uvm_component_utils(arbiter_sequencer)
   
@@ -5,3 +11,6 @@ class arbiter_sequencer extends uvm_sequencer #(arbiter_item);
     super.new(name, parent);
   endfunction
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
