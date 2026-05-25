@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
+   Copyright:   (c) 2026 Nikita Agrawal
+   License:     MIT License (see LICENSE file in root)
+   ========================================================================== */
+
 class counter_directed_seq extends uvm_sequence#(counter_item);
   `uvm_object_utils(counter_directed_seq)
 
@@ -45,3 +51,6 @@ class counter_directed_seq extends uvm_sequence#(counter_item);
     endtask
 
 endclass
+/* ==========================================================================
+   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
+   ========================================================================== */
