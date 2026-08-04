@@ -12,12 +12,10 @@ All projects adhere to modular, industry-standard UVM directory structures (`rtl
 
 | *Category* | *Component / Protocol* | *Key Features Verified* | *Directory Link* |
 | :---: | :---: | :--- | :---: |
-| **Protocols** | **AMBA AXI4 Full** | Multi-beat burst support (FIXED, INCR, WRAP), dynamic data masking (`wstrb`), memory limit DECERR tracking, and strictly in-order transaction processing | [`AXI4`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/AMBA%20Protocols/axi_uvm) |
+| **AMBA Protocols** | **AMBA AXI4 Full** | Multi-beat burst support (FIXED, INCR, WRAP), dynamic data masking (`wstrb`), memory limit DECERR tracking, and strictly in-order transaction processing | [`AXI4`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/AMBA%20Protocols/axi_uvm) |
 | | **AMBA APB** | Non-pipelined two-cycle protocol compliance, wait-state extension (`PREADY`), slave error handling (`PSLVERR`), and SVA timing checks | [`APB`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/AMBA%20Protocols/apb_uvm) |
-|  |  |  |  |
 | **FIFO** | **Asynchronous FIFO** | Dual-clock Clock Domain Crossing (CDC), Gray-coded pointer synchronization using 2-FF synchronizers, and cross-domain reset recovery | [`Async FIFO`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/FIFO/async_fifo_uvm) |
 | | **Synchronous FIFO** | Pointer-based circular buffer memory, full/empty status flags, and overflow/underflow protection | [`Sync FIFO`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/FIFO/sync_fifo_uvm) |
-|  |  |  |  |
 | **Digital Blocks**| **4:1 Multiplexer (32-bit)** | Scalable constrained-random stimulus generation across select lines to prevent output line floating/X-states | [`MUX`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/Digital%20Blocks/mux_uvm) | 
 | | **1:4 Demultiplexer (32-bit)** | Single-input to multi-output routing accuracy and unselected output default state checks | [`De-MUX`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/Digital%20Blocks/dmux_uvm) |
 | | **Priority Encoder (4:2)** | Multi-bit request prioritizations (`req[3]` highest) and valid signal assertion checks | [`Encoder`](https://github.com/nikita-niky/UVM_Verification_Projects/tree/main/Digital%20Blocks/encoder_uvm) | 
