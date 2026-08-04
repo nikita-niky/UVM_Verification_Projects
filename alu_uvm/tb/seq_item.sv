@@ -4,12 +4,6 @@
    License:     MIT License (see LICENSE file in root)
    ========================================================================== */
 
-/* ==========================================================================
-   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
-   Copyright:   (c) 2026 Nikita Agrawal
-   License:     MIT License (see LICENSE file in root)
-   ========================================================================== */
-
 typedef enum logic [2:0] {
   ADD = 3'b000,
   SUB = 3'b001,
@@ -51,9 +45,6 @@ class alu_item extends uvm_sequence_item;
   endfunction  
 
 endclass
-/* ==========================================================================
-   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
-   ========================================================================== */
 /* ==========================================================================
    End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
    ========================================================================== */

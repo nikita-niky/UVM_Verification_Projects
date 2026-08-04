@@ -4,12 +4,6 @@
    License:     MIT License (see LICENSE file in root)
    ========================================================================== */
 
-/* ==========================================================================
-   Author:      Nikita Agrawal (NIT Bhopal | ex-Intel)
-   Copyright:   (c) 2026 Nikita Agrawal
-   License:     MIT License (see LICENSE file in root)
-   ========================================================================== */
-
 class alu_coverage extends uvm_subscriber#(alu_item);
     `uvm_component_utils(alu_coverage)
     alu_item tr;
@@ -82,9 +76,6 @@ class alu_coverage extends uvm_subscriber#(alu_item);
     endfunction
 
 endclass
-/* ==========================================================================
-   End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
-   ========================================================================== */
 /* ==========================================================================
    End of File - Developed by Nikita Agrawal (NIT Bhopal | ex-Intel)
    ========================================================================== */
