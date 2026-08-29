@@ -75,12 +75,6 @@ I designed these sequences to specifically test the "Round Robin" nature of the 
 
 ---
 
-## Link to open the project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/dijn)**
-
----
-
 ## Technical Insight for Recruiters
 
 "A Round Robin arbiter is only as good as its fairness. In this project, I used **SVA liveness properties** to guarantee that no master can be starved of the bus. I specifically implemented an **all-high sequence** to demonstrate the circular shift of the priority mask, proving that the RTL correctly 'remembers' the last winner and gives the next master a fair chance."

@@ -77,12 +77,6 @@ The environment achieves verification closure through:
 
 ---
 
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/s7gP)**
-
----
-
 ## Technical Insight for Recruiters
 
 "Verifying an FSM requires checking both the `legal` and `illegal` paths. My environment uses illegal_bins in the coverage model to detect 'state jumping' and SVA to ensure the Moore output is strictly state-dependent. I also included `recovery` assertions to prove the FSM can restart pattern detection correctly if a sequence is broken halfway (e.g., 10-0)."

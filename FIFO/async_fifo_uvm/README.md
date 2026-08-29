@@ -98,11 +98,6 @@ The wdata and rdata coverpoints are binned for high-value test patterns:
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV) 
 
 ---
-## Link to open the project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/tnM2)**
-
----
 
 ## Technical Insight for Recruiters
 

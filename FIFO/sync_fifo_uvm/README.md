@@ -67,12 +67,6 @@ I implemented a multi-stage stimulus strategy to ensure 100% functional coverage
 
 ---
 
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/AJqq)**
-
----
-
 ## Technical Insight for Recruiters
 
 "Verifying a Synchronous FIFO requires more than just checking if data goes in and out. In this project, I focused on **Boundary Protection**. My environment uses **SVA** to catch overflow/underflow attempts instantly and **cross-coverage** to guarantee that the hardware's status flags were exercised under extreme conditions, such as simultaneous R/W at the threshold of being full."

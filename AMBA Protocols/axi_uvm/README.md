@@ -140,14 +140,6 @@ The environment drives a mix of directed and constrained-random sequences via th
 
 ---
 
-## Link to open the project 
-
-The complete verification environment—including assertions, functional coverage metrics, and scoring logic—can be executed instantly:
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/G8dJ)**
-
----
-
 ## Technical Insight for Recruiters
 
 "A common bug in AXI memory slaves is address-calculation wrapping misalignment during unaligned transfers, or handshake protocol lockups under intense backpressure. My verification environment uses bounded SystemVerilog Assertions to catch protocol violations instantly on the active clock cycle, paired with cross-coverage matrices that ensure unaligned address spaces, burst boundaries, and error-injection paths are mathematically proven and fully closed."

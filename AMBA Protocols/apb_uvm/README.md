@@ -148,10 +148,6 @@ for waveform please look in the result folder, there you can find the waveforms 
 * **Simulator:** Aldec Riviera Pro 2025.04 / EDA Playground
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
 
-## Link to open the project 
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/MW3D)**
-
 
 ## Technical Insight for Recruiters
 

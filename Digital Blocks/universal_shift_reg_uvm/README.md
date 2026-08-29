@@ -89,12 +89,6 @@ Implemented a tiered stimulus approach to verify both structural paths and rando
 
 ---
 
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/eKq9)**
-
----
-
 ## Technical Insight for Recruiters
 
 "A Universal Shift Register is a fundamental block in Serial-to-Parallel converters. Verifying it requires strict checking of bit-indices during shifts. My environment uses **concatenation-based assertions** to ensure that not a single bit is lost or misplaced during bidirectional operations, and my **transition coverage** ensures that the 'Hold' and 'Load' modes work correctly even under rapid mode-switching stress."

@@ -73,12 +73,6 @@ The environment utilizes directed and random sequences to ensure all counting mo
 
 ---
 
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/AQpB)**
-
----
-
 ## Technical Insight for Recruiters
 
 "A common bug in counters is the 'off-by-one' error during wrap-around or a priority conflict between Load and Reset signals. My environment uses **transition coverage** and **temporal assertions** to prove that the counter handles boundary conditions and control priorities exactly as specified, even under randomized stress testing."

@@ -81,12 +81,6 @@ To prove the robustness of the overlapping logic, I implemented specific sequenc
 
 ---
 
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/E39a)**
-
----
-
 ## Technical Insight for Recruiters
 
 "A Mealy FSM is more hardware-efficient but harder to verify because the output path is combinational. My verification environment specifically addresses this by using **immediate assertions** and **cross-coverage** to ensure `pattern_found` only triggers under the exact state/input conditions, while correctly handling overlapping patterns to maximize throughput."

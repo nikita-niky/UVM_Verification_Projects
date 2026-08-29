@@ -99,7 +99,3 @@ To achieve high functional and toggle coverage for the data distribution paths, 
 
 ---
 
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/DYt2)**
-

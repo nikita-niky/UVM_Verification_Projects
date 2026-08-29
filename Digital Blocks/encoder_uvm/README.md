@@ -71,7 +71,3 @@ To ensure the priority arbitration logic and valid bit signaling are robust, the
 * **Methodology:** Constrained Random Verification (CRV), Assertion Based Verification (ABV), Coverage Driven Verification (CDV)
 
 ---
-
-## Link to open the Project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/E2NY)**

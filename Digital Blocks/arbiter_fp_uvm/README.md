@@ -71,12 +71,6 @@ I developed targeted sequences to stress-test the arbiter's decision-making logi
 
 ---
 
-## Link to open the project
-
-🚀 **[Run Simulation on EDA Playground](https://www.edaplayground.com/x/ajWH)**
-
----
-
 ## Technical Insight for Recruiters
 
 "Fixed-priority arbiters are the backbone of many interrupt controllers. In this project, I focused on verifying the **Priority Lock**—ensuring that lower-priority requests never 'leak' through when a higher-priority request is present. My **starvation sequence** explicitly validates this behavior, while my **One-Hot SVA** guarantees that the design will never cause bus contention in a real SoC environment."
